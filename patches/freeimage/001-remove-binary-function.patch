@@ -1,0 +1,16 @@
+--- a/Source/OpenEXR/IlmImf/ImfAttribute.cpp
++++ b/Source/OpenEXR/IlmImf/ImfAttribute.cpp
+@@ -61,12 +61,12 @@
+ Attribute::~Attribute () {}
+ 
+ 
+ namespace {
+ 
+-struct NameCompare: std::binary_function <const char *, const char *, bool>
++struct NameCompare
+ {
+     bool
+     operator () (const char *x, const char *y) const
+     {
+ 	return strcmp (x, y) < 0;
+     }

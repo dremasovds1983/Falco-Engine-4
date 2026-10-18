@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "architecture": "x64",
+  "minimumVersion": "14.44.35207.0",
+  "basis": "MSVC 14.44.35207 used for the verified Windows candidate; runtime must be at least as recent as its build tools.",
+  "documentationUrl": "https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist",
+  "downloadUrl": "https://aka.ms/vc14/vc_redist.x64.exe",
+  "requiredDlls": [
+    "vcruntime140.dll",
+    "vcruntime140_1.dll",
+    "msvcp140.dll",
+    "msvcp140_atomic_wait.dll"
+  ],
+  "payloads": [
+    {
+      "name": "mono-2.0-sgen.dll",
+      "allowedSha256": [
+        "5aceefcd33c29bd657efb54308c9015954e5a210d1afc185cb61e457b93bbd0e"
+      ]
+    },
+    {
+      "name": "OpenAL32.dll",
+      "allowedSha256": [
+        "536531d531a3763e974e1ab2e20dafb927959b469deea786e21632e4a6129d35",
+        "ee9aa2436506865fbb8119b2bfc067afbc4fa132cb2c6d0477182a81aa752541"
+      ]
+    }
+  ]
+}

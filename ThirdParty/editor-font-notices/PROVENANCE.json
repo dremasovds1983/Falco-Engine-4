@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "kind": "editor-font-notices",
+  "sources": {
+    "Res/Editor/Fonts/Cousine-Regular.ttf": "0d5d5eeb6a342432bd63a3c0d16e8470160e019933ee5af3e159d06d665dacce",
+    "Res/Editor/Fonts/DroidSans.ttf": "4e2371bc0e4cf6983342e150412f140da79d674c9be0b56458401f581072ecd3",
+    "Res/Editor/Fonts/Karla-Regular.ttf": "907c55a993e35b3ae4f3b8b8c28367f4b6d431df8e9ca6fbd382d8317dd3684e",
+    "Res/Editor/Fonts/ProggyClean.ttf": "527d2a443ce051f93f7e77b855609722b8cb220a9f104b4aa037be5c90b71324",
+    "Res/Editor/Fonts/ProggyTiny.ttf": "79bf8d3896ba83ae2f9c4fa214dce8fc689eae47950474947a4cc5c6e14a9bfc",
+    "Res/Editor/Fonts/Roboto-Black.ttf": "3872e9b39760a1b59ac1e192633dbb3b58e595b4d423930ac7ded525e9ae25e0",
+    "Res/Editor/Fonts/Roboto-BlackItalic.ttf": "013d22a4fb2638adba28555ee19366f4585f6dc533b7c332f4931a231497cb22",
+    "Res/Editor/Fonts/Roboto-Bold.ttf": "7d0b991ee3e0be7af01ad7ea8cd2beea6c00a25e679a0226b6737f079aafff86",
+    "Res/Editor/Fonts/Roboto-BoldItalic.ttf": "a4bcac14f419a97de0917198a4bc51c3ed4fc4a3db9f68a5102f23664ee01354",
+    "Res/Editor/Fonts/Roboto-Italic.ttf": "5fce8b6f8ba9f4d19f0d535e241d56a2b8e72bb07e7df711d968d092ef7f9fca",
+    "Res/Editor/Fonts/Roboto-Light.ttf": "a6d343d425bc38db90152fa06058b1c7391eca9264f334ef65c1ce175085c6f6",
+    "Res/Editor/Fonts/Roboto-LightItalic.ttf": "364a23e13c64937c3fcea3db778628b89379c893849bbade6e5bf83c5f605c6a",
+    "Res/Editor/Fonts/Roboto-Medium.ttf": "f205cc511821ea56078a105557fcea6253129404d411c997e1866fbd006abb68",
+    "Res/Editor/Fonts/Roboto-MediumItalic.ttf": "f177eed10d2470d13ec68d04907a582829d0ee8281f8a02a906f6954c7816e58",
+    "Res/Editor/Fonts/Roboto-Regular.ttf": "79e851404657dac2106b3d22ad256d47824a9a5765458edb72c9102a45816d95",
+    "Res/Editor/Fonts/Roboto-Thin.ttf": "3d91f7aa69cb7f7064035895c566ac5cb9b2084582d351af7267bb4e0fba60f5",
+    "Res/Editor/Fonts/Roboto-ThinItalic.ttf": "f5e89a344894a60f0f98f1c0182ba51f5046e29dde3118820d39025445aeaae8",
+    "Res/Editor/Fonts/RobotoCondensed-Bold.ttf": "28a1d37668b4cf94fff5256e9639f175baf4dd654ec84ba910485d38beefa6bd",
+    "Res/Editor/Fonts/RobotoCondensed-BoldItalic.ttf": "1b7b805a79e932723b2f052df899a14fb4570c311b73968f2899c63e923c06ec",
+    "Res/Editor/Fonts/RobotoCondensed-Italic.ttf": "36e85f83d6b2a492d762f465037bd5273e7e14f4fe1961f9f5f28b76d0f93ee0",
+    "Res/Editor/Fonts/RobotoCondensed-Light.ttf": "bcafee6b8dbf976a036373a94c340c9aeb7c9683c34808dd9425331c2892be9c",
+    "Res/Editor/Fonts/RobotoCondensed-LightItalic.ttf": "b49459fd132f1dd3c9702df08fee08791e67bfe0a26e06b1badb208e56d2fda4",
+    "Res/Editor/Fonts/RobotoCondensed-Regular.ttf": "4a7c36df4318fee50a8159c3a0ebde4572abab65447ae4a651c2fe87212302b5"
+  },
+  "files": {
+    "Apache-2.0.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "Cousine-OFL.txt": "56e4fd2d99a45a8d8175c884c64d566b32fbe80e135248ed4a976172f18b4bec",
+    "Karla-OFL.txt": "c16114c3ddd686990b1565fae9cb580c4bb0938cdfd563f5ef2864a4418c48c2",
+    "NOTICE.md": "6040a0a152327e59fe5eba8e8751f6a00220bee928ffd4ed9903a2dabea1ee0a",
+    "Proggy-MIT.txt": "fe61d069df303c697e04200f5f8232c2cb09dd3572f4357b323469f7d592d142"
+  },
+  "evidence": {
+    "proggy": {
+      "LICENSE": {
+        "blob": "1dfb54d9d6f5106e78a91330791a66f948a54305",
+        "sha256": "fe61d069df303c697e04200f5f8232c2cb09dd3572f4357b323469f7d592d142"
+      },
+      "ProggyOriginal/ProggyClean.ttf": {
+        "blob": "0270cdfe3caa811e1b252cdcc5b179989c1b8ad6",
+        "sha256": "527d2a443ce051f93f7e77b855609722b8cb220a9f104b4aa037be5c90b71324"
+      },
+      "ProggyOriginal/ProggyTiny.ttf": {
+        "blob": "1c4312c3dbaa81babf38bac992e3722e15eedb73",
+        "sha256": "79bf8d3896ba83ae2f9c4fa214dce8fc689eae47950474947a4cc5c6e14a9bfc"
+      }
+    },
+    "oflBodySource": {
+      "sha": "d76ce0e18e7e5aeb52e5c3b5d2ac88c2b5b9d3db",
+      "html_url": "https://github.com/google/fonts/blob/main/ofl/karla/OFL.txt",
+      "git_url": "https://api.github.com/repos/google/fonts/git/blobs/d76ce0e18e7e5aeb52e5c3b5d2ac88c2b5b9d3db"
+    },
+    "oflSourceSha256": "edf2c840acb9570fe02f40721126aa0da4e4011a0030cc6dce30780569f609b6"
+  },
+  "limitations": [],
+  "scopeNote": "Editor fonts only; the current builtin default is covered separately by the Liberation fonts bundle.",
+  "upstreamRoboto": {
+    "roboto": {
+      "repository": "https://github.com/google/fonts",
+      "commit": "724bf98e9f5cb98a1d3d5044f45a2e286b817401",
+      "version": "2.137",
+      "fonts": {
+        "Res/Editor/Fonts/Roboto-Black.ttf": {
+          "path": "apache/roboto/Roboto-Black.ttf",
+          "blob": "689fe5cb3c715f2944fec30e43ccb8a2b10625d3",
+          "sha256": "3872e9b39760a1b59ac1e192633dbb3b58e595b4d423930ac7ded525e9ae25e0",
+          "bytes": 171480
+        },
+        "Res/Editor/Fonts/Roboto-BlackItalic.ttf": {
+          "path": "apache/roboto/Roboto-BlackItalic.ttf",
+          "blob": "0b4e0ee108899ddfef739f48d2aa9475b8b41a03",
+          "sha256": "013d22a4fb2638adba28555ee19366f4585f6dc533b7c332f4931a231497cb22",
+          "bytes": 177552
+        },
+        "Res/Editor/Fonts/Roboto-Bold.ttf": {
+          "path": "apache/roboto/Roboto-Bold.ttf",
+          "blob": "d3f01ad245b628f386ac95786f53167038720eb2",
+          "sha256": "7d0b991ee3e0be7af01ad7ea8cd2beea6c00a25e679a0226b6737f079aafff86",
+          "bytes": 170760
+        },
+        "Res/Editor/Fonts/Roboto-BoldItalic.ttf": {
+          "path": "apache/roboto/Roboto-BoldItalic.ttf",
+          "blob": "41cc1e753153e343a0ab73a341f545fec9eb7816",
+          "sha256": "a4bcac14f419a97de0917198a4bc51c3ed4fc4a3db9f68a5102f23664ee01354",
+          "bytes": 174952
+        },
+        "Res/Editor/Fonts/Roboto-Italic.ttf": {
+          "path": "apache/roboto/Roboto-Italic.ttf",
+          "blob": "6a1cee5b2948dbddf8fe6bb050a5cdca1c206dbf",
+          "sha256": "5fce8b6f8ba9f4d19f0d535e241d56a2b8e72bb07e7df711d968d092ef7f9fca",
+          "bytes": 173932
+        },
+        "Res/Editor/Fonts/Roboto-Light.ttf": {
+          "path": "apache/roboto/Roboto-Light.ttf",
+          "blob": "219063a578a486b7c00262057efcbc44ebab0eeb",
+          "sha256": "a6d343d425bc38db90152fa06058b1c7391eca9264f334ef65c1ce175085c6f6",
+          "bytes": 170420
+        },
+        "Res/Editor/Fonts/Roboto-LightItalic.ttf": {
+          "path": "apache/roboto/Roboto-LightItalic.ttf",
+          "blob": "0e81e876fcab86b7cc99356aa0e19c0916a907bf",
+          "sha256": "364a23e13c64937c3fcea3db778628b89379c893849bbade6e5bf83c5f605c6a",
+          "bytes": 176616
+        },
+        "Res/Editor/Fonts/Roboto-Medium.ttf": {
+          "path": "apache/roboto/Roboto-Medium.ttf",
+          "blob": "1a7f3b0bba45b7470a4240c3ec67595eeeb02192",
+          "sha256": "f205cc511821ea56078a105557fcea6253129404d411c997e1866fbd006abb68",
+          "bytes": 172064
+        },
+        "Res/Editor/Fonts/Roboto-MediumItalic.ttf": {
+          "path": "apache/roboto/Roboto-MediumItalic.ttf",
+          "blob": "003029527cc651faa12b18f02ce81d74f5031756",
+          "sha256": "f177eed10d2470d13ec68d04907a582829d0ee8281f8a02a906f6954c7816e58",
+          "bytes": 176864
+        },
+        "Res/Editor/Fonts/Roboto-Regular.ttf": {
+          "path": "apache/roboto/Roboto-Regular.ttf",
+          "blob": "2c97eeadffe1a34bd67d3ff1c3887fd53e22c2ca",
+          "sha256": "79e851404657dac2106b3d22ad256d47824a9a5765458edb72c9102a45816d95",
+          "bytes": 171676
+        },
+        "Res/Editor/Fonts/Roboto-Thin.ttf": {
+          "path": "apache/roboto/Roboto-Thin.ttf",
+          "blob": "b74a4fd1a2ed1960da1d0f8f0e9b8d05a5819000",
+          "sha256": "3d91f7aa69cb7f7064035895c566ac5cb9b2084582d351af7267bb4e0fba60f5",
+          "bytes": 171904
+        },
+        "Res/Editor/Fonts/Roboto-ThinItalic.ttf": {
+          "path": "apache/roboto/Roboto-ThinItalic.ttf",
+          "blob": "dd0ddb852645db815ce4f3d45ec4a37b601ccb5f",
+          "sha256": "f5e89a344894a60f0f98f1c0182ba51f5046e29dde3118820d39025445aeaae8",
+          "bytes": 176300
+        }
+      },
+      "license": {
+        "path": "apache/roboto/LICENSE.txt",
+        "blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      }
+    },
+    "condensed": {
+      "repository": "https://android.googlesource.com/platform/external/roboto-fonts",
+      "commit": "5f679c1bf393ac3826d3c54bbdd4654c7fd5e351",
+      "version": "1.100141",
+      "fonts": {
+        "Res/Editor/Fonts/RobotoCondensed-Bold.ttf": {
+          "path": "RobotoCondensed-Bold.ttf",
+          "blob": "48dd63534bae7019b7a4e48ec648e29ce153ccf0",
+          "sha256": "28a1d37668b4cf94fff5256e9639f175baf4dd654ec84ba910485d38beefa6bd",
+          "bytes": 141796
+        },
+        "Res/Editor/Fonts/RobotoCondensed-BoldItalic.ttf": {
+          "path": "RobotoCondensed-BoldItalic.ttf",
+          "blob": "ad728646a17f2c5f972c7fa4ec887511292f7937",
+          "sha256": "1b7b805a79e932723b2f052df899a14fb4570c311b73968f2899c63e923c06ec",
+          "bytes": 145256
+        },
+        "Res/Editor/Fonts/RobotoCondensed-Italic.ttf": {
+          "path": "RobotoCondensed-Italic.ttf",
+          "blob": "a232513d592c414ce19e90e7535002fe3900ec11",
+          "sha256": "36e85f83d6b2a492d762f465037bd5273e7e14f4fe1961f9f5f28b76d0f93ee0",
+          "bytes": 144404
+        },
+        "Res/Editor/Fonts/RobotoCondensed-Light.ttf": {
+          "path": "RobotoCondensed-Light.ttf",
+          "blob": "a6e368d40eacc749999c887f55452f03729f02ad",
+          "sha256": "bcafee6b8dbf976a036373a94c340c9aeb7c9683c34808dd9425331c2892be9c",
+          "bytes": 141384
+        },
+        "Res/Editor/Fonts/RobotoCondensed-LightItalic.ttf": {
+          "path": "RobotoCondensed-LightItalic.ttf",
+          "blob": "5b2b6ae087b385571599d8f5a5dac7019faca3e7",
+          "sha256": "b49459fd132f1dd3c9702df08fee08791e67bfe0a26e06b1badb208e56d2fda4",
+          "bytes": 145104
+        },
+        "Res/Editor/Fonts/RobotoCondensed-Regular.ttf": {
+          "path": "RobotoCondensed-Regular.ttf",
+          "blob": "65bf32a19f9fe3d42d7f48f3f35c56b62b83513a",
+          "sha256": "4a7c36df4318fee50a8159c3a0ebde4572abab65447ae4a651c2fe87212302b5",
+          "bytes": 140396
+        }
+      },
+      "license": {
+        "path": "LICENSE.txt",
+        "blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      }
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+    "schemaVersion":  1,
+    "capturedFromRunId":  "20260818-165025-238-18900",
+    "capturePolicy":  "Explicit Capture only; never updated by Check or by the build.",
+    "classifierRules":  [
+                            {
+                                "match":  "Engine|Editor|Player|ModernBgfxCompat paths, except Engine/glm",
+                                "class":  "falco"
+                            },
+                            {
+                                "match":  "out/deps|out/modern-bgfx|Bgfx/bgfx/3rdparty|dependency roots|toolchain paths",
+                                "class":  "thirdparty"
+                            },
+                            {
+                                "match":  "unknown compiler path",
+                                "class":  "falco"
+                            }
+                        ],
+    "targets":  {
+                    "Engine|modern":  {
+                                          "total":  280,
+                                          "byId":  {
+                                                       "C4018":  {
+                                                                     "falco":  40,
+                                                                     "thirdparty":  0
+                                                                 },
+                                                       "C4099":  {
+                                                                     "falco":  2,
+                                                                     "thirdparty":  4
+                                                                 },
+                                                       "C4101":  {
+                                                                     "falco":  4,
+                                                                     "thirdparty":  0
+                                                                 },
+                                                       "C4244":  {
+                                                                     "falco":  153,
+                                                                     "thirdparty":  0
+                                                                 },
+                                                       "C4267":  {
+                                                                     "falco":  65,
+                                                                     "thirdparty":  8
+                                                                 },
+                                                       "C4305":  {
+                                                                     "falco":  4,
+                                                                     "thirdparty":  0
+                                                                 }
+                                                   }
+                                      },
+                    "Player|modern":  {
+                                          "total":  2,
+                                          "byId":  {
+                                                       "C4244":  {
+                                                                     "falco":  2,
+                                                                     "thirdparty":  0
+                                                                 }
+                                                   }
+                                      },
+                    "Editor|modern":  {
+                                          "total":  252,
+                                          "byId":  {
+                                                       "C4090":  {
+                                                                     "falco":  1,
+                                                                     "thirdparty":  0
+                                                                 },
+                                                       "C4099":  {
+                                                                     "falco":  8,
+                                                                     "thirdparty":  1
+                                                                 },
+                                                       "C4101":  {
+                                                                     "falco":  5,
+                                                                     "thirdparty":  0
+                                                                 },
+                                                       "C4129":  {
+                                                                     "falco":  3,
+                                                                     "thirdparty":  0
+                                                                 },
+                                                       "C4244":  {
+                                                                     "falco":  193,
+                                                                     "thirdparty":  3
+                                                                 },
+                                                       "C4267":  {
+                                                                     "falco":  32,
+                                                                     "thirdparty":  0
+                                                                 },
+                                                       "C4305":  {
+                                                                     "falco":  6,
+                                                                     "thirdparty":  0
+                                                                 }
+                                                   }
+                                      },
+                    "ShadercSmoke|modern":  {
+                                                "total":  0,
+                                                "byId":  {
+
+                                                         }
+                                            }
+                },
+    "suppressionAllowlist":  [
+                                 {
+                                     "path":  "Engine/Assets/VideoClip.cpp",
+                                     "kind":  "pragma-disable",
+                                     "code":  "4996",
+                                     "count":  1
+                                 },
+                                 {
+                                     "path":  "Engine/Classes/fastlz.c",
+                                     "kind":  "pragma-disable",
+                                     "code":  "4244",
+                                     "count":  1
+                                 },
+                                 {
+                                     "path":  "Engine/Components/VideoPlayer.cpp",
+                                     "kind":  "pragma-disable",
+                                     "code":  "4996",
+                                     "count":  1
+                                 },
+                                 {
+                                     "path":  "Engine/glm/detail/type_float.hpp",
+                                     "kind":  "pragma-disable",
+                                     "code":  "4512",
+                                     "count":  1
+                                 },
+                                 {
+                                     "path":  "Engine/glm/detail/type_quat.hpp",
+                                     "kind":  "pragma-disable",
+                                     "code":  "4201",
+                                     "count":  1
+                                 },
+                                 {
+                                     "path":  "Engine/glm/detail/type_vec1.hpp",
+                                     "kind":  "pragma-disable",
+                                     "code":  "4201",
+                                     "count":  1
+                                 },
+                                 {
+                                     "path":  "Engine/glm/detail/type_vec2.hpp",
+                                     "kind":  "pragma-disable",
+                                     "code":  "4201",
+                                     "count":  1
+                                 },
+                                 {
+                                     "path":  "Engine/glm/detail/type_vec3.hpp",
+                                     "kind":  "pragma-disable",
+                                     "code":  "4201",
+                                     "count":  1
+                                 },
+                                 {
+                                     "path":  "Engine/glm/detail/type_vec3.hpp",
+                                     "kind":  "pragma-disable",
+                                     "code":  "4324",
+                                     "count":  1
+                                 },
+                                 {
+                                     "path":  "Engine/glm/detail/type_vec4.hpp",
+                                     "kind":  "pragma-disable",
+                                     "code":  "4201",
+                                     "count":  1
+                                 },
+                                 {
+                                     "path":  "Engine/glm/gtx/range.hpp",
+                                     "kind":  "pragma-disable",
+                                     "code":  "4100",
+                                     "count":  1
+                                 }
+                             ],
+    "captureLogs":  {
+                        "Engine|modern":  {
+                                              "path":  "out/falco-modern/logs/20260818-165025-238-18900/Engine.log",
+                                              "bytes":  319856,
+                                              "sha256":  "CAFC160F8EE2E3E9F1E547214AEA82B2E306563E92FCEBAF7E0C2AD5B39490A8"
+                                          },
+                        "Player|modern":  {
+                                              "path":  "out/falco-modern/logs/20260818-165025-238-18900/Player.log",
+                                              "bytes":  11964,
+                                              "sha256":  "E84A018AA1A1E248C4D1977FC30E4FA487AF6884FB042F17284E4D7B2491FEBE"
+                                          },
+                        "Editor|modern":  {
+                                              "path":  "out/falco-modern/logs/20260818-165025-238-18900/Editor.log",
+                                              "bytes":  280641,
+                                              "sha256":  "CA1E02684784C848892EAF454F01DC05904E6BDA0D95B5A3FC99F92222C4CC2E"
+                                          },
+                        "ShadercSmoke|modern":  {
+                                                    "path":  "out/falco-modern/logs/20260818-165025-238-18900/ShadercSmoke.log",
+                                                    "bytes":  5199,
+                                                    "sha256":  "15AD092086F7CEDEEF3F913FDB626934650FD8AAC5D8C454C810FB39C1C1D5C7"
+                                                }
+                    }
+}

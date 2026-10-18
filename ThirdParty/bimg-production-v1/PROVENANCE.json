@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "componentId": "bimg",
+  "version": "production-v1",
+  "commit": "da38bface6384cdd7f69733b08fb58e57a63cffa",
+  "source": {
+    "url": "https://codeload.github.com/bkaradzic/bimg/tar.gz/da38bface6384cdd7f69733b08fb58e57a63cffa",
+    "sha256": "0FB9440CEB7288E4A5C93126248342B262156EB6D8122ED09A478FBD2F88C74C",
+    "bytes": 1498006
+  },
+  "files": {
+    "3rdparty/astc-encoder/LICENSE.txt": {
+      "bytes": 10139,
+      "sha256": "494accc32e50eb523a0e384d0ae6d4b702db867a89d6971216760e92b240ee12",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/astc-encoder/LICENSE.txt",
+      "sourceSha256": "494accc32e50eb523a0e384d0ae6d4b702db867a89d6971216760e92b240ee12",
+      "selection": "full"
+    },
+    "3rdparty/dav1d/LICENSE": {
+      "bytes": 1317,
+      "sha256": "dd92c3c2247c5651606fc23a5e2d6a1ebc5ace9a3e49cbde0e12f05ad1cb1ee5",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/dav1d/LICENSE",
+      "sourceSha256": "dd92c3c2247c5651606fc23a5e2d6a1ebc5ace9a3e49cbde0e12f05ad1cb1ee5",
+      "selection": "full"
+    },
+    "3rdparty/edtaa3/LICENSE.md": {
+      "bytes": 1591,
+      "sha256": "ec25a5869c228ab4cf7eb9dee26bdad3ed922b4d32e903ba864e815117501b7c",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/edtaa3/LICENSE.md",
+      "sourceSha256": "ec25a5869c228ab4cf7eb9dee26bdad3ed922b4d32e903ba864e815117501b7c",
+      "selection": "full"
+    },
+    "3rdparty/etc1/LICENSE": {
+      "bytes": 9233,
+      "sha256": "5366e97b4478f15a1e2fd7e6094337426597df28de50cd9fed3f2e7e87f1229e",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/etc1/LICENSE",
+      "sourceSha256": "5366e97b4478f15a1e2fd7e6094337426597df28de50cd9fed3f2e7e87f1229e",
+      "selection": "full"
+    },
+    "3rdparty/etcpak/LICENSE.txt": {
+      "bytes": 1610,
+      "sha256": "1de8a55cc43c86e8d58e3272f4e2b4e24107a4a571bbd1ee2ec00c4dbd4245e2",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/etcpak/LICENSE.txt",
+      "sourceSha256": "1de8a55cc43c86e8d58e3272f4e2b4e24107a4a571bbd1ee2ec00c4dbd4245e2",
+      "selection": "full"
+    },
+    "3rdparty/iqa/LICENSE": {
+      "bytes": 1618,
+      "sha256": "6e237927f416d8f5aeab4eb7ddd20691a50536ff5548ba341353b4b713798a93",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/iqa/LICENSE",
+      "sourceSha256": "6e237927f416d8f5aeab4eb7ddd20691a50536ff5548ba341353b4b713798a93",
+      "selection": "full"
+    },
+    "3rdparty/libavif/LICENSE": {
+      "bytes": 20415,
+      "sha256": "165abf92cc04b39e80d29cadea7a6a7e8fddf59407d4ad2616507a7ebe8216f9",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/libavif/LICENSE",
+      "sourceSha256": "165abf92cc04b39e80d29cadea7a6a7e8fddf59407d4ad2616507a7ebe8216f9",
+      "selection": "full"
+    },
+    "3rdparty/libsquish/LICENSE": {
+      "bytes": 1121,
+      "sha256": "a6b8c383bf3ab28460d6507484d605dd722e03971606f0cd3032a3af682b63a5",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/libsquish/LICENSE",
+      "sourceSha256": "a6b8c383bf3ab28460d6507484d605dd722e03971606f0cd3032a3af682b63a5",
+      "selection": "full"
+    },
+    "3rdparty/lodepng/LICENSE": {
+      "bytes": 886,
+      "sha256": "bdafa318b8e637d600ca1b60545e894881977a16a16b74809c95e805701621e3",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/lodepng/LICENSE",
+      "sourceSha256": "bdafa318b8e637d600ca1b60545e894881977a16a16b74809c95e805701621e3",
+      "selection": "full"
+    },
+    "3rdparty/nvtt/NVIDIA_Texture_Tools_LICENSE.txt": {
+      "bytes": 1147,
+      "sha256": "389b74f951d6f0147d369b5e6dd3129be68bb5c477f73f195a20a5b450b97b6d",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/nvtt/NVIDIA_Texture_Tools_LICENSE.txt",
+      "sourceSha256": "389b74f951d6f0147d369b5e6dd3129be68bb5c477f73f195a20a5b450b97b6d",
+      "selection": "full"
+    },
+    "3rdparty/pvrtc/LICENSE.TXT": {
+      "bytes": 1390,
+      "sha256": "4c935c76282126b380620c5d026af886fec26db3bb775da41005337535c6a94e",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/pvrtc/LICENSE.TXT",
+      "sourceSha256": "4c935c76282126b380620c5d026af886fec26db3bb775da41005337535c6a94e",
+      "selection": "full"
+    },
+    "3rdparty/simplewebp/LICENSE.md": {
+      "bytes": 1508,
+      "sha256": "4ee502f313e8d6aaa7064d7d6ef37fb257fa47effaad335553891facf9d0d963",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/simplewebp/LICENSE.md",
+      "sourceSha256": "4ee502f313e8d6aaa7064d7d6ef37fb257fa47effaad335553891facf9d0d963",
+      "selection": "full"
+    },
+    "3rdparty/stb/LICENSE": {
+      "bytes": 2510,
+      "sha256": "bebfe904b14301657e4e5d655c811d51fd31b97c455b9cc2d8600d6bac6cff63",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/stb/LICENSE",
+      "sourceSha256": "bebfe904b14301657e4e5d655c811d51fd31b97c455b9cc2d8600d6bac6cff63",
+      "selection": "full"
+    },
+    "3rdparty/tinyexr/LICENSE": {
+      "bytes": 1549,
+      "sha256": "b90388aaadc2b6f77a5c01278697a2a0539eab471a3befc6a081728becdc3390",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/tinyexr/LICENSE",
+      "sourceSha256": "b90388aaadc2b6f77a5c01278697a2a0539eab471a3befc6a081728becdc3390",
+      "selection": "full"
+    },
+    "3rdparty/tinyexr/deps/miniz/LICENSE": {
+      "bytes": 1184,
+      "sha256": "0115478d567121238cf6cc1c0c361926cf07a49d9e4c9e66da97fac6a01646b3",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/tinyexr/deps/miniz/LICENSE",
+      "sourceSha256": "0115478d567121238cf6cc1c0c361926cf07a49d9e4c9e66da97fac6a01646b3",
+      "selection": "full"
+    },
+    "LICENSE": {
+      "bytes": 1299,
+      "sha256": "ac2e0d253b1584316a36a0fae1d4407fa3ebcb15f27021ab479b23d27f0c9c08",
+      "encoding": "utf-8-sig",
+      "sourcePath": "LICENSE",
+      "sourceSha256": "ac2e0d253b1584316a36a0fae1d4407fa3ebcb15f27021ab479b23d27f0c9c08",
+      "selection": "full"
+    }
+  },
+  "limitations": [
+    "Source notice superset, including optional tools/examples/platforms; not proof all code is linked.",
+    "Nested per-file attribution and final candidate coverage remain under review."
+  ]
+}

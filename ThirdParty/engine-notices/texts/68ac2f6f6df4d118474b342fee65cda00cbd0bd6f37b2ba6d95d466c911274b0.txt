@@ -1,0 +1,8 @@
+/*
+ * Copyright 2010-2026 Branimir Karadzic. All rights reserved.
+ * Adapted from bgfx examples/common/imgui/imgui.cpp at
+ * 65551a7db19240b4d105f09e665190d196243d92 (BSD-2-Clause).
+ * Falco adaptation 2026: ImGui 1.85 font atlas, Engine texture IDs and API,
+ * bounded framebuffer scissors, reset callbacks and device lifetime handling.
+ * Full upstream license: ThirdParty/bgfx-production-v1/LICENSE.
+ */

@@ -1,0 +1,29 @@
+// CommandLineSelfExtractorStub.cs
+// ------------------------------------------------------------------
+//
+// Copyright (c) 2008-2011 Dino Chiesa.
+// All rights reserved.
+//
+// This code module is part of DotNetZip, a zipfile class library.
+//
+// ------------------------------------------------------------------
+//
+// This code is licensed under the Microsoft Public License.
+// See the file License.txt for the license details.
+// More info on: http://dotnetzip.codeplex.com
+//
+// ------------------------------------------------------------------
+//
+// last saved (in emacs):
+// Time-stamp: <2011-June-18 20:58:45>
+//
+// ------------------------------------------------------------------
+//
+// This is a the source module that implements the stub of a
+// command-line self-extracting Zip archive - the code included in all
+// command-line SFX files.  This code is included as a resource into the
+// DotNetZip DLL, and then is compiled at runtime when a SFX is saved.
+//
+// ------------------------------------------------------------------
+
+

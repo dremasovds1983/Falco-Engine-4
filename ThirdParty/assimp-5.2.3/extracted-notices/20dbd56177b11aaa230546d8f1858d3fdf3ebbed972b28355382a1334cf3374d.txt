@@ -1,0 +1,22 @@
+/* crypt.c -- base code for traditional PKWARE encryption
+   Version 1.01e, February 12th, 2005
+
+   Copyright (C) 1998-2005 Gilles Vollant
+   Modifications for Info-ZIP crypting
+     Copyright (C) 2003 Terry Thorsen
+
+   This code is a modified version of crypting code in Info-ZIP distribution
+
+   Copyright (C) 1990-2000 Info-ZIP.  All rights reserved.
+
+   This program is distributed under the terms of the same license as zlib.
+   See the accompanying LICENSE file for the full text of the license.
+
+   This encryption code is a direct transcription of the algorithm from
+   Roger Schlafly, described by Phil Katz in the file appnote.txt. This
+   file (appnote.txt) is distributed with the PKZIP program (even in the
+   version without encryption capabilities).
+
+   If you don't need crypting in your application, just define symbols
+   NOCRYPT and NOUNCRYPT.
+*/

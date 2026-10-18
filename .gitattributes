@@ -1,0 +1,2 @@
+# Preserve exact bytes used by dependency/source hashes.
+* -text

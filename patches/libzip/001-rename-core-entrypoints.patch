@@ -1,0 +1,42 @@
+--- a/lib/zip.h
++++ b/lib/zip.h
+@@ -403,7 +403,7 @@
+ ZIP_DEPRECATED("use 'zip_source_zip_file_create' instead") ZIP_EXTERN zip_source_t *_Nullable zip_source_zip_create(zip_t *_Nonnull, zip_uint64_t, zip_flags_t, zip_uint64_t, zip_int64_t, zip_error_t *_Nullable);
+ #endif
+ 
+-ZIP_EXTERN int zip_close(zip_t *_Nonnull);
++ZIP_EXTERN int zip_close_z(zip_t *_Nonnull);
+ ZIP_EXTERN int zip_delete(zip_t *_Nonnull, zip_uint64_t);
+ ZIP_EXTERN zip_int64_t zip_dir_add(zip_t *_Nonnull, const char *_Nonnull, zip_flags_t);
+ ZIP_EXTERN void zip_discard(zip_t *_Nonnull);
+@@ -458,7 +458,7 @@
+ ZIP_EXTERN zip_int64_t zip_get_num_entries(zip_t *_Nonnull, zip_flags_t);
+ ZIP_EXTERN const char *_Nonnull zip_libzip_version(void);
+ ZIP_EXTERN zip_int64_t zip_name_locate(zip_t *_Nonnull, const char *_Nonnull, zip_flags_t);
+-ZIP_EXTERN zip_t *_Nullable zip_open(const char *_Nonnull, int, int *_Nullable);
++ZIP_EXTERN zip_t *_Nullable zip_open_z(const char *_Nonnull, int, int *_Nullable);
+ ZIP_EXTERN zip_t *_Nullable zip_open_from_source(zip_source_t *_Nonnull, int, zip_error_t *_Nullable);
+ ZIP_EXTERN int zip_register_progress_callback_with_state(zip_t *_Nonnull, double, zip_progress_callback _Nullable, void (*_Nullable)(void *_Nullable), void *_Nullable);
+ ZIP_EXTERN int zip_register_cancel_callback_with_state(zip_t *_Nonnull, zip_cancel_callback _Nullable, void (*_Nullable)(void *_Nullable), void *_Nullable);
+--- a/lib/zip_open.c
++++ b/lib/zip_open.c
+@@ -65,7 +65,7 @@
+ 
+ 
+ ZIP_EXTERN zip_t *
+-zip_open(const char *fn, int _flags, int *zep) {
++zip_open_z(const char *fn, int _flags, int *zep) {
+     zip_t *za;
+     zip_source_t *src;
+     struct zip_error error;
+--- a/lib/zip_close.c
++++ b/lib/zip_close.c
+@@ -50,7 +50,7 @@
+ static int write_data_descriptor(zip_t *za, const zip_dirent_t *dirent, int is_zip64);
+ 
+ ZIP_EXTERN int
+-zip_close(zip_t *za) {
++zip_close_z(zip_t *za) {
+     zip_uint64_t i, j, survivors, unchanged_offset;
+     zip_int64_t off;
+     int error;

@@ -1,0 +1,937 @@
+{
+  "schemaVersion": 1,
+  "componentId": "bullet",
+  "version": "3.24",
+  "source": {
+    "url": "https://github.com/bulletphysics/bullet3/archive/refs/tags/3.24.tar.gz",
+    "sha256": "6b1e987d6f8156fa8a6468652f4eaad17b3e11252c9870359e5bca693e35780b",
+    "bytes": 139793021
+  },
+  "files": {
+    "LICENSE.txt": {
+      "bytes": 1022,
+      "sha256": "885cd516a8420acb7c3e0b1a7119913b686495001ae564e3229740460e8cff59",
+      "encoding": "utf-8-sig",
+      "sourcePath": "LICENSE.txt",
+      "sourceSha256": "885cd516a8420acb7c3e0b1a7119913b686495001ae564e3229740460e8cff59",
+      "selection": "full"
+    },
+    "extracted-notices/b9d26f5c9c35b27767f6028de0695aff57f0c171c739d3a3dc0abc9aa524ae4a.txt": {
+      "bytes": 933,
+      "sha256": "b9d26f5c9c35b27767f6028de0695aff57f0c171c739d3a3dc0abc9aa524ae4a",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Collision/BroadPhaseCollision/b3BroadphaseCallback.h",
+      "sourceSha256": "1b0f7b49751df49047ada09aa721e123e3d71af95e0888482909e3c5b82c2a9a",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 933
+      }
+    },
+    "extracted-notices/79be54e494ce442c8acc8063be4dd5e57eabb319cb345e428eae1fa31ae7d82b.txt": {
+      "bytes": 863,
+      "sha256": "79be54e494ce442c8acc8063be4dd5e57eabb319cb345e428eae1fa31ae7d82b",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Collision/NarrowPhaseCollision/b3ConvexUtility.cpp",
+      "sourceSha256": "dbc71a86b934f370b60f0ee513971ebf33eaac0bf8fdcdf0e252ad7eccf1166e",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 863
+      }
+    },
+    "extracted-notices/5fbc8634a94de47065302c19e1c6cd6933cd1d7d31248f9700d22d34a7eb3d38.txt": {
+      "bytes": 656,
+      "sha256": "5fbc8634a94de47065302c19e1c6cd6933cd1d7d31248f9700d22d34a7eb3d38",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Collision/NarrowPhaseCollision/shared/b3MprPenetration.h",
+      "sourceSha256": "4e6018886e6102038712f8003ca898570f3c8c8a4fa3a8c4c31df3032eb9e259",
+      "selection": {
+        "byteStart": 1,
+        "byteEnd": 657
+      }
+    },
+    "extracted-notices/4c2c15c32fdba0af573e55af3e6e8617a14ef235ed2c4d2fbb919169da5d92c4.txt": {
+      "bytes": 863,
+      "sha256": "4c2c15c32fdba0af573e55af3e6e8617a14ef235ed2c4d2fbb919169da5d92c4",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Common/b3Logging.cpp",
+      "sourceSha256": "030db6bdc61f6eeac824bd255b8b0b18c71ea0e3133a811603e3361d5945f875",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 863
+      }
+    },
+    "extracted-notices/7c3936c06be8b1a9588d9821b05e7f71b60ceffd274bff73e5983fa60814424e.txt": {
+      "bytes": 899,
+      "sha256": "7c3936c06be8b1a9588d9821b05e7f71b60ceffd274bff73e5983fa60814424e",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Common/b3Matrix3x3.h",
+      "sourceSha256": "a9f7051bb77d8f4bb2dd87cd3fe2c323f71325ee85cff96c95f0535de88f3912",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 899
+      }
+    },
+    "extracted-notices/5e1b339711a2eff97a0bfd67bfb6d6a6ae79b798a0bd2aee77ab5efdde9d44c5.txt": {
+      "bytes": 920,
+      "sha256": "5e1b339711a2eff97a0bfd67bfb6d6a6ae79b798a0bd2aee77ab5efdde9d44c5",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Common/b3Vector3.cpp",
+      "sourceSha256": "b89a996009b50dbf6be84b49b6fee301692001790b24478e20efd442e2e704ba",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 920
+      }
+    },
+    "extracted-notices/bddf1ea6abdc6c15aec53958fb275b7c492c6106d1260b168b4a0d6b1ca40b7e.txt": {
+      "bytes": 897,
+      "sha256": "bddf1ea6abdc6c15aec53958fb275b7c492c6106d1260b168b4a0d6b1ca40b7e",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Common/b3Vector3.h",
+      "sourceSha256": "dcdfc1672ae554b4ef1331f215944e1ca0e2d289e973a63da8db4849256ae82c",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 897
+      }
+    },
+    "extracted-notices/62a1fb819de186f4bb1e9096935172e4ddcb0ee87283b741b44d6c7726d0064c.txt": {
+      "bytes": 936,
+      "sha256": "62a1fb819de186f4bb1e9096935172e4ddcb0ee87283b741b44d6c7726d0064c",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Dynamics/ConstraintSolver/b3ContactSolverInfo.h",
+      "sourceSha256": "8ebebd25233a6ac061a195a5dc8c41b3db77f76cfe96f1c6f54735bd6f2036e5",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 936
+      }
+    },
+    "extracted-notices/defe7a56142017dcae8ebc4d78a56ff956bb3f5a75398d00b60344965491fe7c.txt": {
+      "bytes": 934,
+      "sha256": "defe7a56142017dcae8ebc4d78a56ff956bb3f5a75398d00b60344965491fe7c",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Dynamics/ConstraintSolver/b3Generic6DofConstraint.cpp",
+      "sourceSha256": "8cccaabc30eb2701086dcb9bb18b2d328d7b85617d76ea0b6e3e0874ce759c2c",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 934
+      }
+    },
+    "extracted-notices/6ec63f1e9c8833f6fd1e757e62f2a15e158510a309b7714229a67200fa9b3818.txt": {
+      "bytes": 935,
+      "sha256": "6ec63f1e9c8833f6fd1e757e62f2a15e158510a309b7714229a67200fa9b3818",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Dynamics/ConstraintSolver/b3PgsJacobiSolver.cpp",
+      "sourceSha256": "88b5f58e0e57a56b43f6dd111017d92e07795115aa8ff2964caea64c1f235012",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 935
+      }
+    },
+    "extracted-notices/90f2016e8eedada4395270439ab47e372f47ed301487cbb285c2b8a3173c1520.txt": {
+      "bytes": 936,
+      "sha256": "90f2016e8eedada4395270439ab47e372f47ed301487cbb285c2b8a3173c1520",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Dynamics/ConstraintSolver/b3TypedConstraint.h",
+      "sourceSha256": "775a91c91fd63d8abfc091df07d3e2b145ad2229f2aed21bdd828d450ca9991d",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 936
+      }
+    },
+    "extracted-notices/aaaa2802ea7b3efc613e07177be6bf806a4641e755a1f3b463c4800324adab07.txt": {
+      "bytes": 900,
+      "sha256": "aaaa2802ea7b3efc613e07177be6bf806a4641e755a1f3b463c4800324adab07",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Geometry/b3AabbUtil.h",
+      "sourceSha256": "fb570c70f7bb94926a66d97d85398938e8a29a97a46a4ae73db81cc0f03a36ac",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 900
+      }
+    },
+    "extracted-notices/22890ea7532fba527815053684c1a28009593ba84716f71be646be534798c282.txt": {
+      "bytes": 868,
+      "sha256": "22890ea7532fba527815053684c1a28009593ba84716f71be646be534798c282",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Geometry/b3ConvexHullComputer.cpp",
+      "sourceSha256": "cf52760e8441a147bca274813d2a1769e981c149a53b371b9df924590c4bd622",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 868
+      }
+    },
+    "extracted-notices/dcbd4fc3d409bce78bae576689838949f2ff73b06a4be582bed84c621b74b8aa.txt": {
+      "bytes": 945,
+      "sha256": "dcbd4fc3d409bce78bae576689838949f2ff73b06a4be582bed84c621b74b8aa",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Geometry/b3GrahamScan2dConvexHull.h",
+      "sourceSha256": "6a90ae89dd574aba7b2478bf6ad49e7202c0d115de1feb7fa7c469d653eccab6",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 945
+      }
+    },
+    "extracted-notices/8e33b059521b14f17cb54e6b25a4ed6961171f3a326f7467e3363179750e09ec.txt": {
+      "bytes": 911,
+      "sha256": "8e33b059521b14f17cb54e6b25a4ed6961171f3a326f7467e3363179750e09ec",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3OpenCL/BroadphaseCollision/kernels/sapKernels.h",
+      "sourceSha256": "80187335dd81457da57e6aab729e393020afad66000ae6ca44f59a71fa384280",
+      "selection": {
+        "byteStart": 136,
+        "byteEnd": 1047
+      }
+    },
+    "extracted-notices/3de6da95414cf793b3e326278165a187755631c5a76a2817ee8107c83d9cc043.txt": {
+      "bytes": 954,
+      "sha256": "3de6da95414cf793b3e326278165a187755631c5a76a2817ee8107c83d9cc043",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3OpenCL/Initialize/b3OpenCLUtils.cpp",
+      "sourceSha256": "babae6b00d66538c150235449e1882330737c99967bd273f76561f02aef0a31d",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 954
+      }
+    },
+    "extracted-notices/8aacce76a77a2659eff5192ba0eaa4883c8314558c5f994bd6ce7eff59175e5f.txt": {
+      "bytes": 957,
+      "sha256": "8aacce76a77a2659eff5192ba0eaa4883c8314558c5f994bd6ce7eff59175e5f",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3OpenCL/Initialize/b3OpenCLUtils.h",
+      "sourceSha256": "e2d14063161d72af1919dda03327a6986269d202fb7a6ab2cd24c98c53bcd7bd",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 957
+      }
+    },
+    "extracted-notices/ea41da9eb4bdb7a14a4d67d7e43695bb0b19ad3d67865895aeb4152b2131ce19.txt": {
+      "bytes": 935,
+      "sha256": "ea41da9eb4bdb7a14a4d67d7e43695bb0b19ad3d67865895aeb4152b2131ce19",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3OpenCL/NarrowphaseCollision/b3ContactCache.h",
+      "sourceSha256": "b571f2513a5824bbe2d7f88570fe43ceca67bd9218bd386aa303c85bea8c3712",
+      "selection": {
+        "byteStart": 1,
+        "byteEnd": 936
+      }
+    },
+    "extracted-notices/f61914a79a7a05c6caa2cbd60604010e13046891a868d8d08e1501a15fbb8c8c.txt": {
+      "bytes": 934,
+      "sha256": "f61914a79a7a05c6caa2cbd60604010e13046891a868d8d08e1501a15fbb8c8c",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3OpenCL/NarrowphaseCollision/b3GjkEpa.cpp",
+      "sourceSha256": "9b5bbc57da302584e7d61b151e12708babd65ef12d4aa058245f8c81c02bb23a",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 934
+      }
+    },
+    "extracted-notices/61ebd2510a5461ade0a01bfcb70388ed014bf2c49cfd68a19d71a000d1377d62.txt": {
+      "bytes": 935,
+      "sha256": "61ebd2510a5461ade0a01bfcb70388ed014bf2c49cfd68a19d71a000d1377d62",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3OpenCL/NarrowphaseCollision/b3OptimizedBvh.cpp",
+      "sourceSha256": "c43a00885663e07da5d37b97ed6751bccfd3f2b7ffc57d7f74b28ccc4820db5d",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 935
+      }
+    },
+    "extracted-notices/34922ee6759b3340eb30c8e01beb95d31d2b1758dde4a6d80bcdb44620ed8fbb.txt": {
+      "bytes": 1324,
+      "sha256": "34922ee6759b3340eb30c8e01beb95d31d2b1758dde4a6d80bcdb44620ed8fbb",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3OpenCL/NarrowphaseCollision/b3VoronoiSimplexSolver.cpp",
+      "sourceSha256": "fe7ce8d66c35a9220325514b9055cee08cbf395e196f266d8a3726693ed4a896",
+      "selection": {
+        "byteStart": 1,
+        "byteEnd": 1325
+      }
+    },
+    "extracted-notices/7e419077ce495eee538da4d5a1f750ed8eacaae27b1bd5784a6e77585df087b6.txt": {
+      "bytes": 728,
+      "sha256": "7e419077ce495eee538da4d5a1f750ed8eacaae27b1bd5784a6e77585df087b6",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3OpenCL/NarrowphaseCollision/kernels/mprKernels.h",
+      "sourceSha256": "2d83a9574be0b6fc48f7fcbf64c79422ab29f80081bc9e7cec17e334e69e0f9b",
+      "selection": {
+        "byteStart": 143,
+        "byteEnd": 871
+      }
+    },
+    "extracted-notices/f7f92df861735877a12eb44224cec397a18469eafcd16392c562cb75a30b8755.txt": {
+      "bytes": 986,
+      "sha256": "f7f92df861735877a12eb44224cec397a18469eafcd16392c562cb75a30b8755",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3OpenCL/NarrowphaseCollision/kernels/satConcaveKernels.h",
+      "sourceSha256": "a42133d33b5220e80afc4eea0e876c638ae1d4710c0fd80bcdff52091e6ab750",
+      "selection": {
+        "byteStart": 13892,
+        "byteEnd": 14878
+      }
+    },
+    "extracted-notices/4e3d621a1eb3d7144397a7d9c101862d43e9b47c77609ce61494032fa0dc5561.txt": {
+      "bytes": 923,
+      "sha256": "4e3d621a1eb3d7144397a7d9c101862d43e9b47c77609ce61494032fa0dc5561",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3OpenCL/ParallelPrimitives/kernels/CopyKernelsCL.h",
+      "sourceSha256": "bce8711b2bebab5c6a3ad13d3e0a95b742c750bd980537e732735a555c7fb499",
+      "selection": {
+        "byteStart": 144,
+        "byteEnd": 1067
+      }
+    },
+    "extracted-notices/aa3388c8c1cdc670202f3c0423a73bcd3c49d8f65de2cf26507f766fe516d535.txt": {
+      "bytes": 998,
+      "sha256": "aa3388c8c1cdc670202f3c0423a73bcd3c49d8f65de2cf26507f766fe516d535",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3OpenCL/ParallelPrimitives/kernels/RadixSort32KernelsCL.h",
+      "sourceSha256": "443f0020e1ec146c9841aac2da64d46fa5a1164794f2e251db01491ffa5c4b1c",
+      "selection": {
+        "byteStart": 151,
+        "byteEnd": 1149
+      }
+    },
+    "extracted-notices/8316484938e1b01b613eaa9a56e8014bc3241f3ddf1a0e6afc382e0cf079236e.txt": {
+      "bytes": 943,
+      "sha256": "8316484938e1b01b613eaa9a56e8014bc3241f3ddf1a0e6afc382e0cf079236e",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3OpenCL/RigidBody/b3GpuSolverConstraint.h",
+      "sourceSha256": "38e9f9f63976c5c629c2f475c304df3e2b6f692a98ca0c493e7bddc27187e970",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 943
+      }
+    },
+    "extracted-notices/b13a50e85a4f852a05c18598f4df9fc3fdbf81f041d24289aeb00320d3b3373b.txt": {
+      "bytes": 911,
+      "sha256": "b13a50e85a4f852a05c18598f4df9fc3fdbf81f041d24289aeb00320d3b3373b",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3OpenCL/RigidBody/kernels/integrateKernel.h",
+      "sourceSha256": "489a1f8000b6f0820b7f58eedb721a40c0b7e86c928745f6371573396f20a74b",
+      "selection": {
+        "byteStart": 148,
+        "byteEnd": 1059
+      }
+    },
+    "extracted-notices/7eaa659e79af728df97112528440ba2c40d34917ca39f863b6d172b5e0dc14e6.txt": {
+      "bytes": 899,
+      "sha256": "7eaa659e79af728df97112528440ba2c40d34917ca39f863b6d172b5e0dc14e6",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Serialize/Bullet2FileLoader/autogenerated/bullet2.h",
+      "sourceSha256": "883d5d3e5d0c18dc0427740383fec6c35337e0415b3c4de87fc6e93240d4ea86",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 899
+      }
+    },
+    "extracted-notices/f811d32a2b367d50d84adc63df2151327dbfa1ef2d23f608aa3981251f1f7aea.txt": {
+      "bytes": 887,
+      "sha256": "f811d32a2b367d50d84adc63df2151327dbfa1ef2d23f608aa3981251f1f7aea",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Serialize/Bullet2FileLoader/b3BulletFile.cpp",
+      "sourceSha256": "4a9ba2110e3da9f661532603fa1f149b1987e6c6d47989123220fe4932ada8f1",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 887
+      }
+    },
+    "extracted-notices/d56f140016b1c87664549b7744e1f86e46a218193261cedeb8720fa519682058.txt": {
+      "bytes": 899,
+      "sha256": "d56f140016b1c87664549b7744e1f86e46a218193261cedeb8720fa519682058",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Serialize/Bullet2FileLoader/b3BulletFile.h",
+      "sourceSha256": "3db4cb9bb98f5ba7585b1482f0432424ebce53a8b33ab548914cb63e76041293",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 899
+      }
+    },
+    "extracted-notices/175eec62b842a0c63849ef50d9fee8ef2ee931b0ca0845aedbd7a016ed4c6dd1.txt": {
+      "bytes": 899,
+      "sha256": "175eec62b842a0c63849ef50d9fee8ef2ee931b0ca0845aedbd7a016ed4c6dd1",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Serialize/Bullet2FileLoader/b3Chunk.cpp",
+      "sourceSha256": "54a57ef779132f244ee9c1c1a799e92330e1016eed22483c4b4cab319bd58bfb",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 899
+      }
+    },
+    "extracted-notices/fcfb248da9b584bbaa3dd954a9725ab6d287d5e1fc295dd9c44c262c337824c5.txt": {
+      "bytes": 934,
+      "sha256": "fcfb248da9b584bbaa3dd954a9725ab6d287d5e1fc295dd9c44c262c337824c5",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/Bullet3Serialize/Bullet2FileLoader/b3Defines.h",
+      "sourceSha256": "63855a80fb43d3f2f4d10702a182661006b456d1c338de859e5e100c9f667ef7",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 934
+      }
+    },
+    "extracted-notices/2c2c6bdc72c174aa7204230abef3ccca1b6ae5ecd62255cf611caf3596a520fa.txt": {
+      "bytes": 126,
+      "sha256": "2c2c6bdc72c174aa7204230abef3ccca1b6ae5ecd62255cf611caf3596a520fa",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/BroadphaseCollision/btAxisSweep3.cpp",
+      "sourceSha256": "6c081c0ab4f57cd20e4afc3e6bc0a13ac96c5e3aa09003856aff16e94f1aa367",
+      "selection": {
+        "byteStart": 1,
+        "byteEnd": 127
+      }
+    },
+    "extracted-notices/46e01c94aff511ed96d93a0a551bfdd0e4ed82830aa69e18e14bf3b87bf92893.txt": {
+      "bytes": 889,
+      "sha256": "46e01c94aff511ed96d93a0a551bfdd0e4ed82830aa69e18e14bf3b87bf92893",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/BroadphaseCollision/btAxisSweep3.cpp",
+      "sourceSha256": "6c081c0ab4f57cd20e4afc3e6bc0a13ac96c5e3aa09003856aff16e94f1aa367",
+      "selection": {
+        "byteStart": 129,
+        "byteEnd": 1018
+      }
+    },
+    "extracted-notices/640e76695cf7e45f9437415949079247cc3471391d717ae3b0cea797576dcc39.txt": {
+      "bytes": 891,
+      "sha256": "640e76695cf7e45f9437415949079247cc3471391d717ae3b0cea797576dcc39",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/BroadphaseCollision/btAxisSweep3.h",
+      "sourceSha256": "05aa7f2c20932e7f937858942c74bae187c26f8162981007a3dc4ceb7700786b",
+      "selection": {
+        "byteStart": 128,
+        "byteEnd": 1019
+      }
+    },
+    "extracted-notices/8ba9a2e462bd165fe9a116ab482feb96d548fa5c0dfa32f8febcba1e7ce556b1.txt": {
+      "bytes": 936,
+      "sha256": "8ba9a2e462bd165fe9a116ab482feb96d548fa5c0dfa32f8febcba1e7ce556b1",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/BroadphaseCollision/btDbvt.h",
+      "sourceSha256": "7e71e46f893f947b8ae7aa39c776cb67dc0a046e7fa222121165cf04271d2ddc",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 936
+      }
+    },
+    "extracted-notices/755496860d5c68acc43ad1776bb53a184d63e8c9ee3eb17c70cf9eada5223190.txt": {
+      "bytes": 935,
+      "sha256": "755496860d5c68acc43ad1776bb53a184d63e8c9ee3eb17c70cf9eada5223190",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/CollisionDispatch/btActivatingCollisionAlgorithm.cpp",
+      "sourceSha256": "3b5190a1d43ea84df87b6d1968170250f4db1dd8169c2e1de7b3e72db679db62",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 935
+      }
+    },
+    "extracted-notices/782649c4c72e45e2b92e43f7e7e1f592dc112f3268a58daa583eb759744bb186.txt": {
+      "bytes": 967,
+      "sha256": "782649c4c72e45e2b92e43f7e7e1f592dc112f3268a58daa583eb759744bb186",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/CollisionDispatch/btBox2dBox2dCollisionAlgorithm.cpp",
+      "sourceSha256": "28a838b53d09878c7d07c2365d886c56771a2e910197f99492964196140c49c0",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 967
+      }
+    },
+    "extracted-notices/75daa4525b6be59d1945548f2d4e35f604dc065ac783f61bd69692c98db14a8d.txt": {
+      "bytes": 1211,
+      "sha256": "75daa4525b6be59d1945548f2d4e35f604dc065ac783f61bd69692c98db14a8d",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/CollisionDispatch/btBoxBoxDetector.cpp",
+      "sourceSha256": "2aba34f67f6195fdb43d5b3092da0761d8f60482b05e25da16077771deb29536",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 1211
+      }
+    },
+    "extracted-notices/28e92660fc678d0bf4acd73008fa8a9ff5544d4f0f043b776632be5902466cb2.txt": {
+      "bytes": 1200,
+      "sha256": "28e92660fc678d0bf4acd73008fa8a9ff5544d4f0f043b776632be5902466cb2",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/CollisionDispatch/btBoxBoxDetector.h",
+      "sourceSha256": "883a0fa7171ce2b9ec58ff6e82ecf3d592df607a462e062ea09f4a08d858a125",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 1200
+      }
+    },
+    "extracted-notices/a1b7041b94a469fe11b6326cf0489688ab448783799aa0717006f01c243e63bf.txt": {
+      "bytes": 3344,
+      "sha256": "a1b7041b94a469fe11b6326cf0489688ab448783799aa0717006f01c243e63bf",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/CollisionDispatch/btCollisionWorld.h",
+      "sourceSha256": "e87929cde033d2d9a6dc5f4807626f7487f137d0120e2d4ba8c25dff4ff2c12f",
+      "selection": {
+        "byteStart": 937,
+        "byteEnd": 4281
+      }
+    },
+    "extracted-notices/3667e8f281b017ae5e598676107070919dcccbbe2384e5518ce7c62b0f16d551.txt": {
+      "bytes": 933,
+      "sha256": "3667e8f281b017ae5e598676107070919dcccbbe2384e5518ce7c62b0f16d551",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/CollisionDispatch/btCollisionWorldImporter.cpp",
+      "sourceSha256": "a6a254852e8fe9a601deffb025782c8845ce96b8dd322e22b4905ca14621d1e1",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 933
+      }
+    },
+    "extracted-notices/6603ed1762325f4679a80947fc53c8dd6eabcfbe7d0c82f2bf3768e5625ab8db.txt": {
+      "bytes": 937,
+      "sha256": "6603ed1762325f4679a80947fc53c8dd6eabcfbe7d0c82f2bf3768e5625ab8db",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/CollisionDispatch/btCompoundCollisionAlgorithm.cpp",
+      "sourceSha256": "a835af4929c6fec2202b1b6d1a59ddeb5467870dda7dad273a05444dd3bca550",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 937
+      }
+    },
+    "extracted-notices/19f769dc4b807ac88975964417efa0b217bb10b9aa30b1eb76096666759dc888.txt": {
+      "bytes": 936,
+      "sha256": "19f769dc4b807ac88975964417efa0b217bb10b9aa30b1eb76096666759dc888",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/CollisionDispatch/btCompoundCompoundCollisionAlgorithm.cpp",
+      "sourceSha256": "87b2e4ece837e18743537e5f44a0b43ad00487144085dba9ae31080fab8ba2d0",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 936
+      }
+    },
+    "extracted-notices/2f07fc81de96629e013befe15647849502c2e3602f28a41f3da108aa66fc370f.txt": {
+      "bytes": 246,
+      "sha256": "2f07fc81de96629e013befe15647849502c2e3602f28a41f3da108aa66fc370f",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/CollisionShapes/btMiniSDF.cpp",
+      "sourceSha256": "327a4d901724864081685322b44ccf2b95123f8436a3df701dead4e76d95fcb4",
+      "selection": {
+        "byteStart": 24,
+        "byteEnd": 270
+      }
+    },
+    "extracted-notices/009996c1bad65b4bcdcfee47a728b12fbe055a79e3d114beb0adee9458b99689.txt": {
+      "bytes": 930,
+      "sha256": "009996c1bad65b4bcdcfee47a728b12fbe055a79e3d114beb0adee9458b99689",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/CollisionShapes/btTriangleInfoMap.h",
+      "sourceSha256": "f7184f7004a3e293894018e275774c95e06c7d75a5b0afa6551c6bd518b124b8",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 930
+      }
+    },
+    "extracted-notices/54a2d714a34d875f09e2e958ea05bc458f884d0e63052c9889afa4e79aa67cbe.txt": {
+      "bytes": 1004,
+      "sha256": "54a2d714a34d875f09e2e958ea05bc458f884d0e63052c9889afa4e79aa67cbe",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/Gimpact/btBoxCollision.h",
+      "sourceSha256": "cfa2e3ef01fc8761b71b6bdbe855814bd5ac8d297582b0d5fec6105b111c4a8f",
+      "selection": {
+        "byteStart": 136,
+        "byteEnd": 1140
+      }
+    },
+    "extracted-notices/2ea9b50aafaebef01ab2d6ba8b2ba00498d804a5d6f63e447aa277d7216e741c.txt": {
+      "bytes": 1282,
+      "sha256": "2ea9b50aafaebef01ab2d6ba8b2ba00498d804a5d6f63e447aa277d7216e741c",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/Gimpact/gim_array.h",
+      "sourceSha256": "26bafeb329f46862aae8d6c50ee80c2e806628d652f8f00676cf54260a157ce2",
+      "selection": {
+        "byteStart": 113,
+        "byteEnd": 1395
+      }
+    },
+    "extracted-notices/c3e8b5638700c9cd3a0ed9c857820c25d4c5d28c307a6c4fc49e59bb77100fa8.txt": {
+      "bytes": 934,
+      "sha256": "c3e8b5638700c9cd3a0ed9c857820c25d4c5d28c307a6c4fc49e59bb77100fa8",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/NarrowPhaseCollision/btComputeGjkEpaPenetration.h",
+      "sourceSha256": "b8e441262d0cfb9fac517d0ad3adf0d90cd50029e43848b8791dab9680b58e31",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 934
+      }
+    },
+    "extracted-notices/1136344f1bd05b11b8fff5de8c614fb5576a1f263122cbda9f5035feb31dc2d7.txt": {
+      "bytes": 934,
+      "sha256": "1136344f1bd05b11b8fff5de8c614fb5576a1f263122cbda9f5035feb31dc2d7",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/NarrowPhaseCollision/btGjkEpa3.h",
+      "sourceSha256": "2b7d67daac0a3d4494d9f776d34774ed2eda54c28700bb6dfcf21101ee7d99e6",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 934
+      }
+    },
+    "extracted-notices/7ac3adba5a2092b7522d6f951b4efa536b4cffcff9df0d0264e79c2f47248144.txt": {
+      "bytes": 976,
+      "sha256": "7ac3adba5a2092b7522d6f951b4efa536b4cffcff9df0d0264e79c2f47248144",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/NarrowPhaseCollision/btGjkEpaPenetrationDepthSolver.cpp",
+      "sourceSha256": "129462092bfe3840cb5386ed168b3ea20ec8a5e2e7bc02723fa216213e36d30a",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 976
+      }
+    },
+    "extracted-notices/6e816387341e9c1d14c9cdbdb5cbed48409c14e6289d557813797032103ccee0.txt": {
+      "bytes": 977,
+      "sha256": "6e816387341e9c1d14c9cdbdb5cbed48409c14e6289d557813797032103ccee0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/NarrowPhaseCollision/btGjkEpaPenetrationDepthSolver.h",
+      "sourceSha256": "bc5e3baf33e296de9367c247b25b9cd8803decee3d57896f87ec161568bedff0",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 977
+      }
+    },
+    "extracted-notices/04d824ea74936ccdc8a266897c84427a287c5e08b657152661b0171b74c4ae4c.txt": {
+      "bytes": 741,
+      "sha256": "04d824ea74936ccdc8a266897c84427a287c5e08b657152661b0171b74c4ae4c",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletCollision/NarrowPhaseCollision/btMprPenetration.h",
+      "sourceSha256": "f14ccc37bf6bd3a50f2b3c580671eabde8c326d4911b20959294e233c2dcc467",
+      "selection": {
+        "byteStart": 1,
+        "byteEnd": 742
+      }
+    },
+    "extracted-notices/7bbe6e3689b2c874ec98a41e617a216b6e797d304bf6ebb96e0f7d6bc36f363c.txt": {
+      "bytes": 961,
+      "sha256": "7bbe6e3689b2c874ec98a41e617a216b6e797d304bf6ebb96e0f7d6bc36f363c",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/ConstraintSolver/btConeTwistConstraint.cpp",
+      "sourceSha256": "534225609f4ad6620efe45f65c2a63a944e4bdda5828d06110d053c0d9012dec",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 961
+      }
+    },
+    "extracted-notices/60fff4829497793de9384f94c6bb0653cca8ff76a78693d93e5a58d160543532.txt": {
+      "bytes": 930,
+      "sha256": "60fff4829497793de9384f94c6bb0653cca8ff76a78693d93e5a58d160543532",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/ConstraintSolver/btFixedConstraint.cpp",
+      "sourceSha256": "589b234d6ca716ebee21492ec6431d748942cba4849247c1969e3f1ed502e4ef",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 930
+      }
+    },
+    "extracted-notices/45dcbfd5db4467cd1a657966cb0d77af1816e1e58f5c18af720cf1c3dccb413a.txt": {
+      "bytes": 945,
+      "sha256": "45dcbfd5db4467cd1a657966cb0d77af1816e1e58f5c18af720cf1c3dccb413a",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/ConstraintSolver/btGearConstraint.cpp",
+      "sourceSha256": "cb36b265b4a1a21b0fb65e8fadb84a2cc7e26e3e00f3882cdaf1d3d6cb378b2f",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 945
+      }
+    },
+    "extracted-notices/9399ad9bd583534655112737456035405eecca3afe782e014763ae58ed0017b8.txt": {
+      "bytes": 956,
+      "sha256": "9399ad9bd583534655112737456035405eecca3afe782e014763ae58ed0017b8",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.cpp",
+      "sourceSha256": "e2b05640867ccac64b2af2fb7b6e654c2fa971d9bc8ad041bc9c52baf9e5073f",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 956
+      }
+    },
+    "extracted-notices/9258cf35fb62d607766052c7bcedfd55ceb003eaf02442d9554946ccfab0fa87.txt": {
+      "bytes": 933,
+      "sha256": "9258cf35fb62d607766052c7bcedfd55ceb003eaf02442d9554946ccfab0fa87",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.cpp",
+      "sourceSha256": "9196d824cb7bdd496d9cdeba4e5da0f82344ab6b2a40f76cf9326073fc88e932",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 933
+      }
+    },
+    "extracted-notices/230ce6bd80ca5b68ecb5f53df6ad95859c6e382308566a5e99ea2d42e5b7db8b.txt": {
+      "bytes": 1459,
+      "sha256": "230ce6bd80ca5b68ecb5f53df6ad95859c6e382308566a5e99ea2d42e5b7db8b",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/Featherstone/btMultiBody.cpp",
+      "sourceSha256": "f87b035309a2aaa9ad3935855333779b23e8f49cfa578a1f80aecc4f57a2070a",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 1459
+      }
+    },
+    "extracted-notices/bff3240a354a92d2f1a90ef87f3c31dcac9d30db809ff6572b0bee4323562701.txt": {
+      "bytes": 928,
+      "sha256": "bff3240a354a92d2f1a90ef87f3c31dcac9d30db809ff6572b0bee4323562701",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/Featherstone/btMultiBodyConstraint.h",
+      "sourceSha256": "fbc76464b9d2804c0ce9f05fffb63e9a33ec96c5053ef987438aa148982e038b",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 928
+      }
+    },
+    "extracted-notices/15035d9c7d6854d36643f850b9857307ee577167d276ce71297a27e5dc0e38ce.txt": {
+      "bytes": 934,
+      "sha256": "15035d9c7d6854d36643f850b9857307ee577167d276ce71297a27e5dc0e38ce",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/Featherstone/btMultiBodyInplaceSolverIslandCallback.h",
+      "sourceSha256": "d2acddf84f84b723c19e069a2d5757e39935be234a22afd144ae375aad653fa6",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 934
+      }
+    },
+    "extracted-notices/b4f44a67d5c44a0248c3a937d3ac7da8c4e5d5029739c664e2ecbfc3b6edd200.txt": {
+      "bytes": 844,
+      "sha256": "b4f44a67d5c44a0248c3a937d3ac7da8c4e5d5029739c664e2ecbfc3b6edd200",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/Featherstone/btMultiBodyJointFeedback.h",
+      "sourceSha256": "19fd40879e9f8c0571b7994cd6e59ec0d5669896fb3efbd5cf451dbcefe6fd41",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 844
+      }
+    },
+    "extracted-notices/81c432464d5af1f3187ce2c7938e9f330d7ee27a3d27637a8ad0b093ee96efd8.txt": {
+      "bytes": 925,
+      "sha256": "81c432464d5af1f3187ce2c7938e9f330d7ee27a3d27637a8ad0b093ee96efd8",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/Featherstone/btMultiBodyMLCPConstraintSolver.cpp",
+      "sourceSha256": "4bff81385c9213097828fda2c34e0ced605f6155ed5e0ae5334d47f2f4127aa0",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 925
+      }
+    },
+    "extracted-notices/57042e1c7c78dc66ec0a829f2959845f4e7c9f15da628337387ee968b86da897.txt": {
+      "bytes": 928,
+      "sha256": "57042e1c7c78dc66ec0a829f2959845f4e7c9f15da628337387ee968b86da897",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/Featherstone/btMultiBodySphericalJointLimit.cpp",
+      "sourceSha256": "532979d42a0d93d707006b5424ba2fcab8d3f82f9cfd00eb28f9ba306bb15671",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 928
+      }
+    },
+    "extracted-notices/9bab4ac9c89e20b6084879dbcced9e1ead2fb4971fcdb4a55233483d5f504200.txt": {
+      "bytes": 1555,
+      "sha256": "9bab4ac9c89e20b6084879dbcced9e1ead2fb4971fcdb4a55233483d5f504200",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/MLCPSolvers/btDantzigLCP.cpp",
+      "sourceSha256": "76a426a01afc94a87ec4de2c8568f17490fbae07a970c57a891cec5ea45d57ae",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 1555
+      }
+    },
+    "extracted-notices/675f11e203a94b5deb1feea44e75f3deb3bf3888dcad5c2584ec100652b930a7.txt": {
+      "bytes": 1201,
+      "sha256": "675f11e203a94b5deb1feea44e75f3deb3bf3888dcad5c2584ec100652b930a7",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/MLCPSolvers/btDantzigLCP.h",
+      "sourceSha256": "568a49e2a52c6cf97320f48974f9cd7f1fa9399211b538cdf1242367721410bd",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 1201
+      }
+    },
+    "extracted-notices/395d3a2d42b5f0b5f9c74bae0eab83120d522c3f8331a798a7a481c4f33b07e5.txt": {
+      "bytes": 946,
+      "sha256": "395d3a2d42b5f0b5f9c74bae0eab83120d522c3f8331a798a7a481c4f33b07e5",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/MLCPSolvers/btLemkeAlgorithm.cpp",
+      "sourceSha256": "af4e0ff568ffbd13f4961b18ae1427bdf109267917288e12e98f966d84021726",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 946
+      }
+    },
+    "extracted-notices/953ca2e9b9888701726687b845074889641ea1d0f479f7c6be6f6df26d21ad8d.txt": {
+      "bytes": 445,
+      "sha256": "953ca2e9b9888701726687b845074889641ea1d0f479f7c6be6f6df26d21ad8d",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/Vehicle/btRaycastVehicle.cpp",
+      "sourceSha256": "ab0732c00ff4fb4271b58185f5fbfa6a4d62f1f02a4b4f6419f909696befb23a",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 445
+      }
+    },
+    "extracted-notices/3f5362de76643c6e256e802a3bcbb1490bb124b67ffa6f18bdb43c3475beb9d5.txt": {
+      "bytes": 444,
+      "sha256": "3f5362de76643c6e256e802a3bcbb1490bb124b67ffa6f18bdb43c3475beb9d5",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletDynamics/Vehicle/btVehicleRaycaster.h",
+      "sourceSha256": "30afe63358b338e4c843cbe54749406ab5be4bac3e58308d9fd77f9c0b6bf5a9",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 444
+      }
+    },
+    "extracted-notices/b3f4c03f70c22caa9886487d90845d9dfa66890569f75028e8d8baa4018ab49e.txt": {
+      "bytes": 994,
+      "sha256": "b3f4c03f70c22caa9886487d90845d9dfa66890569f75028e8d8baa4018ab49e",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletSoftBody/btCGProjection.h",
+      "sourceSha256": "0a4f0f25e99b46d884ada41cdbf1245be15897f87315153cece2cb07ef737d3e",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 994
+      }
+    },
+    "extracted-notices/ff5efc4c1b44ae798184b4d996f9f49e61ef2dc797a40901eb924c5e921c8593.txt": {
+      "bytes": 981,
+      "sha256": "ff5efc4c1b44ae798184b4d996f9f49e61ef2dc797a40901eb924c5e921c8593",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletSoftBody/btDeformableNeoHookeanForce.h",
+      "sourceSha256": "acc5e74260b6e7d7cc3f357ecb55d123dbfe322cbe93c99e5b88cc64b1a90f4a",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 981
+      }
+    },
+    "extracted-notices/40921a3a6368b215077311f48be5b3ad688a97ee4153f3feb328200917e2eac9.txt": {
+      "bytes": 936,
+      "sha256": "40921a3a6368b215077311f48be5b3ad688a97ee4153f3feb328200917e2eac9",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/BulletSoftBody/btSoftBodyHelpers.h",
+      "sourceSha256": "998336764ffb8b749a71e775e74bd2cfcbed46a82bd223056540d5ca0df9f1c5",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 936
+      }
+    },
+    "extracted-notices/e080789027d6bc81f2687de02dae65f38676ed7846f6ec7c010deedc572dc0ef.txt": {
+      "bytes": 933,
+      "sha256": "e080789027d6bc81f2687de02dae65f38676ed7846f6ec7c010deedc572dc0ef",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/LinearMath/TaskScheduler/btThreadSupportInterface.h",
+      "sourceSha256": "1cc47b980ea2e7c0d990d3ec8fd44860b2a024eb959022d1bf50223cb6af553e",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 933
+      }
+    },
+    "extracted-notices/acec7145f64692d264a6fd559c60342833c0f5c2aa99a0a259e60298d6b14880.txt": {
+      "bytes": 905,
+      "sha256": "acec7145f64692d264a6fd559c60342833c0f5c2aa99a0a259e60298d6b14880",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/LinearMath/btConvexHull.cpp",
+      "sourceSha256": "bc9ead056f4d702e76aae98bdbb596efdbbfe16b19c27981198e681085611b20",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 905
+      }
+    },
+    "extracted-notices/5345e4a83e92b04bb05c39cc8923c0910dccb760c6e84daa821be1c48f70cf0e.txt": {
+      "bytes": 900,
+      "sha256": "5345e4a83e92b04bb05c39cc8923c0910dccb760c6e84daa821be1c48f70cf0e",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/LinearMath/btConvexHull.h",
+      "sourceSha256": "f053f3ae3041307a42d2b12ed8aecf4a7dedd827d9a2211ebd8fd803ab946e19",
+      "selection": {
+        "byteStart": 1,
+        "byteEnd": 901
+      }
+    },
+    "extracted-notices/aba3577caa4b7f4b29d2f93e34383594ddf0b8789a67c3814d6c0ecdbdd0dc97.txt": {
+      "bytes": 2390,
+      "sha256": "aba3577caa4b7f4b29d2f93e34383594ddf0b8789a67c3814d6c0ecdbdd0dc97",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/LinearMath/btImplicitQRSVD.h",
+      "sourceSha256": "7ec1d06d6b2635e3d8fb42781b7861dd92596f04587b77a8cf07285acc96eb3d",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 2390
+      }
+    },
+    "extracted-notices/aae583e8f355e3ae408b39753b7196a8bb66bd08ca8ac3d2553ae01ba2197fbe.txt": {
+      "bytes": 881,
+      "sha256": "aae583e8f355e3ae408b39753b7196a8bb66bd08ca8ac3d2553ae01ba2197fbe",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/LinearMath/btScalar.h",
+      "sourceSha256": "5f4895f833a745205d93e9de5a40b4b328524aab3d5e8ff5b46baf4bea3084c7",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 881
+      }
+    },
+    "extracted-notices/6dc661c8a8f56cce387690a3b63e87b8ebda0bbe490652927afb47a4312b1783.txt": {
+      "bytes": 866,
+      "sha256": "6dc661c8a8f56cce387690a3b63e87b8ebda0bbe490652927afb47a4312b1783",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/LinearMath/btSpatialAlgebra.h",
+      "sourceSha256": "e9fdcb2431bb314a844a33d217cfe0ef021e6f99594702834170005e230417cf",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 866
+      }
+    },
+    "extracted-notices/f553a1b2e6b38fabd1392033181ed1a7c81b505dc1ef095b0d0a0785d18c90e9.txt": {
+      "bytes": 881,
+      "sha256": "f553a1b2e6b38fabd1392033181ed1a7c81b505dc1ef095b0d0a0785d18c90e9",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/LinearMath/btThreads.cpp",
+      "sourceSha256": "6a62cbf40f49ce6dc267ff39a19abba439bd1fc6eef3cae8a20074e5a7fafba0",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 881
+      }
+    },
+    "extracted-notices/9abd758f7e4eb88b0b559f47470028ea09f45c540521b39ad2504a57b4ef3536.txt": {
+      "bytes": 923,
+      "sha256": "9abd758f7e4eb88b0b559f47470028ea09f45c540521b39ad2504a57b4ef3536",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/LinearMath/btVector3.cpp",
+      "sourceSha256": "a1f19cc1f479e896828fb726da5c41d6e304af75590b3d2044b1ede740be6bb8",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 923
+      }
+    },
+    "extracted-notices/54d265bafcc90351788952967e80dd1a80864124709a1b36853ab0e22162fc4b.txt": {
+      "bytes": 334,
+      "sha256": "54d265bafcc90351788952967e80dd1a80864124709a1b36853ab0e22162fc4b",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/clew/clew.c",
+      "sourceSha256": "781a8de057d37b0165ec1797db2c93281b4d67fca2cca79ee1283dbe2ca7f105",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 334
+      }
+    },
+    "extracted-notices/1f969a5a7ce3b3f1d8067386482eaabd9f959f9910a97389de8450d35f5e9df5.txt": {
+      "bytes": 287,
+      "sha256": "1f969a5a7ce3b3f1d8067386482eaabd9f959f9910a97389de8450d35f5e9df5",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/clew/clew.h",
+      "sourceSha256": "44512d2f5956c3205c2a915c2dc9e58fe0a6a2f0cd75f45d609125343322e41b",
+      "selection": {
+        "byteStart": 53,
+        "byteEnd": 340
+      }
+    },
+    "extracted-notices/045d729a6c12c806422c034ba32cbbb232fc036a9b0e5106ef5f60c8017f9c05.txt": {
+      "bytes": 1281,
+      "sha256": "045d729a6c12c806422c034ba32cbbb232fc036a9b0e5106ef5f60c8017f9c05",
+      "encoding": "utf-8-sig",
+      "sourcePath": "src/clew/clew.h",
+      "sourceSha256": "44512d2f5956c3205c2a915c2dc9e58fe0a6a2f0cd75f45d609125343322e41b",
+      "selection": {
+        "byteStart": 1170,
+        "byteEnd": 2451
+      }
+    }
+  },
+  "limitations": [
+    "Assimp contrib / Bullet src source-notice collection; optional sources may not be linked.",
+    "Collection does not certify complete per-file attribution or final release composition."
+  ]
+}

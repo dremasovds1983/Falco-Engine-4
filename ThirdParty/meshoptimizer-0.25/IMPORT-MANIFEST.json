@@ -1,0 +1,92 @@
+[
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\LICENSE.md",
+    "target": "ThirdParty\\meshoptimizer-0.25\\LICENSE.md",
+    "sha256": "e4a26033e3551fb2722888949fbb41e77aee628e8e8f04dcffeee301aa7e5634"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\allocator.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\allocator.cpp",
+    "sha256": "0bff407ee165d338026badacce8bd37320372cc687631a2a8054afa7147f1e26"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\clusterizer.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\clusterizer.cpp",
+    "sha256": "a2deddc6e02566c37fc2dcc6564d52fe4f1321edf8938ce0337fb887795281e7"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\indexanalyzer.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\indexanalyzer.cpp",
+    "sha256": "342e0788a62470d8825c845e3dd909361779b7fd949ded01c7a91a249eadce45"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\indexcodec.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\indexcodec.cpp",
+    "sha256": "d4e02267339f90cd4a76fddb007bae98a42e1b4dcb819e31a1c9e273c56c3f48"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\indexgenerator.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\indexgenerator.cpp",
+    "sha256": "4a9c596ad5976ee1cc490306660837cff8fde77c63820a0ca4e5538e6b044306"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\meshoptimizer.h",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\meshoptimizer.h",
+    "sha256": "749fad207448931b638aff648e9ab3f03bb2eb1c8657b1afe21350bad0b2c4c1"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\overdrawoptimizer.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\overdrawoptimizer.cpp",
+    "sha256": "a70412562f991133ce52b2833adee9de0a9029dc45312ada1eb5c2452dc4f3ee"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\partition.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\partition.cpp",
+    "sha256": "0bec6b8a326ce15521283dcea2d1a7ca2d5d5a2ee1ba2d3bd3e82f65ff174a91"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\quantization.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\quantization.cpp",
+    "sha256": "8293cf0810796dab81474a8b53bc4e26619f2407e327f7db60b52a5f25b42860"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\rasterizer.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\rasterizer.cpp",
+    "sha256": "10b71ec7e0d865697c52d5d29c38af40a9285c2762570bdd002689e817058fe5"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\simplifier.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\simplifier.cpp",
+    "sha256": "131b2092e1acd5546d46fba5463c2a8027089565826ce75790c3e5bc45acf8b2"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\spatialorder.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\spatialorder.cpp",
+    "sha256": "9005ee0069ed8c56797606de80c0cd951ab55ffb608bc3af83c4e5b2517371b1"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\stripifier.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\stripifier.cpp",
+    "sha256": "e653e6be3a9b821016a1f6a90b756b971422f1246ebd03e60b478251a288bfd4"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\vcacheoptimizer.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\vcacheoptimizer.cpp",
+    "sha256": "618429ef4db8ab9b16fde4e73dcf425d89452acbf103085478bc8b1761fa6689"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\vertexcodec.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\vertexcodec.cpp",
+    "sha256": "ccc277c289fdde407dcbc07eb729baa5cba1e3656bbb890d404566de393c77b6"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\vertexfilter.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\vertexfilter.cpp",
+    "sha256": "ea7004263e534b12b82c38023df009309b5f425b216d81269140d1bebc35bee7"
+  },
+  {
+    "source": "out\\modern-bgfx\\src\\bgfx\\3rdparty\\meshoptimizer\\src\\vfetchoptimizer.cpp",
+    "target": "ThirdParty\\meshoptimizer-0.25\\src\\vfetchoptimizer.cpp",
+    "sha256": "bf0c01c1d8e9bc474fda3882c630b440553e9fd221c96d785ba08e7c0f0221ff"
+  }
+]

@@ -1,0 +1,733 @@
+{
+  "schemaVersion": 1,
+  "componentId": "bgfx",
+  "version": "production-v1",
+  "commit": "65551a7db19240b4d105f09e665190d196243d92",
+  "source": {
+    "url": "https://codeload.github.com/bkaradzic/bgfx/tar.gz/65551a7db19240b4d105f09e665190d196243d92",
+    "sha256": "43B0F6C9B9CD3C939F61071DE8FD2B3217EAF23C99F169D2E1FF26C0FEFEC75C",
+    "bytes": 120869246
+  },
+  "files": {
+    "3rdparty/cgltf/LICENSE": {
+      "bytes": 1061,
+      "sha256": "26feef79aa035d996164250235b3d09d5e0ca171eb7ac97b7de47ef058aa5cfe",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/cgltf/LICENSE",
+      "sourceSha256": "26feef79aa035d996164250235b3d09d5e0ca171eb7ac97b7de47ef058aa5cfe",
+      "selection": "full"
+    },
+    "extracted-notices/3rdparty/d3d4linux/d3d4linux.cpp.txt": {
+      "bytes": 451,
+      "sha256": "bc291b396e1cc7eb4489860d0fc57164c914fe22e18803ca892371a07a08fb0c",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/d3d4linux/d3d4linux.cpp",
+      "sourceSha256": "87aa9d399c55b9e751fe31613cb32a17a3db8b6207a86e4188d970c2f11643ba",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 451
+      }
+    },
+    "3rdparty/dawn/LICENSE": {
+      "bytes": 11829,
+      "sha256": "0493f897193af1796d5054659f45ec7d4c5af648fa67a99f01d30e55cc805abc",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/dawn/LICENSE",
+      "sourceSha256": "0493f897193af1796d5054659f45ec7d4c5af648fa67a99f01d30e55cc805abc",
+      "selection": "full"
+    },
+    "3rdparty/dear-imgui/LICENSE.txt": {
+      "bytes": 1083,
+      "sha256": "1b64b23b817e547982a86984685f5e9337695caa542753fb6f08d502d5208e38",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/dear-imgui/LICENSE.txt",
+      "sourceSha256": "1b64b23b817e547982a86984685f5e9337695caa542753fb6f08d502d5208e38",
+      "selection": "full"
+    },
+    "3rdparty/directx-headers/LICENSE": {
+      "bytes": 1093,
+      "sha256": "903df5512f7d02609fed0c780a9b704f5a3eeb6e4d84ebe42a29845c81899a3c",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/directx-headers/LICENSE",
+      "sourceSha256": "903df5512f7d02609fed0c780a9b704f5a3eeb6e4d84ebe42a29845c81899a3c",
+      "selection": "full"
+    },
+    "3rdparty/fcpp/COPYING": {
+      "bytes": 1616,
+      "sha256": "6da95f4f6a07687794d4ac5dbaf6fb08055810ef75005619cd36f99be1b61193",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/fcpp/COPYING",
+      "sourceSha256": "6da95f4f6a07687794d4ac5dbaf6fb08055810ef75005619cd36f99be1b61193",
+      "selection": "full"
+    },
+    "3rdparty/glsl-optimizer/license.txt": {
+      "bytes": 1198,
+      "sha256": "e26a745226f4a46b3ca00ffbe8be18507362189a2863d04b4f563ba176a9a836",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/glsl-optimizer/license.txt",
+      "sourceSha256": "e26a745226f4a46b3ca00ffbe8be18507362189a2863d04b4f563ba176a9a836",
+      "selection": "full"
+    },
+    "3rdparty/glslang/LICENSE.txt": {
+      "bytes": 54615,
+      "sha256": "17e70c676e1521ff3e4686f04a2053d93a7e28a33be8de7ec37ab0ff72feb677",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/glslang/LICENSE.txt",
+      "sourceSha256": "17e70c676e1521ff3e4686f04a2053d93a7e28a33be8de7ec37ab0ff72feb677",
+      "selection": "full"
+    },
+    "extracted-notices/3rdparty/h264/h264.h.txt": {
+      "bytes": 1098,
+      "sha256": "0a1362ed593ab63c4ed58d70f0110fe9c3837e9ef72b9a89bb65b6afc53757f0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/h264/h264.h",
+      "sourceSha256": "eb41865963165b7c419d210f5b5aa092430cb3db969585b7d8753bb243bbcc16",
+      "selection": {
+        "byteStart": 29061,
+        "byteEnd": 30159
+      }
+    },
+    "3rdparty/iconfontheaders/LICENSE": {
+      "bytes": 1084,
+      "sha256": "692f993c67926145cbcea3c952ce131fae614cad9bb88be7ad6c2b2d844543c4",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/iconfontheaders/LICENSE",
+      "sourceSha256": "692f993c67926145cbcea3c952ce131fae614cad9bb88be7ad6c2b2d844543c4",
+      "selection": "full"
+    },
+    "extracted-notices/3rdparty/khronos/EGL/egl.h.txt": {
+      "bytes": 412,
+      "sha256": "f8af19ec4b816b6a72f2ec282f54de2d4dedc6c9a20ec377e5abcb915d22c6b9",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/EGL/egl.h",
+      "sourceSha256": "42ef2c0fabd5bdf2654e7768f90ce4e9d49d0013e5b6ac984bf6d5f8afbb66c9",
+      "selection": {
+        "byteStart": 77,
+        "byteEnd": 489
+      }
+    },
+    "extracted-notices/3rdparty/khronos/EGL/eglext.h.txt": {
+      "bytes": 412,
+      "sha256": "f8af19ec4b816b6a72f2ec282f54de2d4dedc6c9a20ec377e5abcb915d22c6b9",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/EGL/eglext.h",
+      "sourceSha256": "16850120313a5cb90e092e96a9542c16c67d31821fa0be896837d3886c90b0d5",
+      "selection": {
+        "byteStart": 83,
+        "byteEnd": 495
+      }
+    },
+    "extracted-notices/3rdparty/khronos/EGL/eglplatform.h.txt": {
+      "bytes": 90,
+      "sha256": "4c161ffa310e57ca2023b8065e96c8f4617a5231b0e142c1187c3b0381a9b183",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/EGL/eglplatform.h",
+      "sourceSha256": "25b5391655effcf363a38fa00c3154f356a3eab3d35dc067847875513cf1e441",
+      "selection": {
+        "byteStart": 51,
+        "byteEnd": 141
+      }
+    },
+    "extracted-notices/3rdparty/khronos/GLES2/gl2.h.txt": {
+      "bytes": 338,
+      "sha256": "1260a890c27bd9526abfd4ef9402fb53bf113a805d45285aefd19e40e27a8733",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/GLES2/gl2.h",
+      "sourceSha256": "b3b883a42b281f4f3d692ec4457a9980169636248cf1182abce21addf2891e38",
+      "selection": {
+        "byteStart": 89,
+        "byteEnd": 427
+      }
+    },
+    "extracted-notices/3rdparty/khronos/GLES2/gl2ext.h.txt": {
+      "bytes": 338,
+      "sha256": "1260a890c27bd9526abfd4ef9402fb53bf113a805d45285aefd19e40e27a8733",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/GLES2/gl2ext.h",
+      "sourceSha256": "e7cd34bd565224440507380666c4e593a7a10c0f354817d795eb69716a1aa2c2",
+      "selection": {
+        "byteStart": 95,
+        "byteEnd": 433
+      }
+    },
+    "extracted-notices/3rdparty/khronos/GLES2/gl2platform.h.txt": {
+      "bytes": 90,
+      "sha256": "3fd4bc0fa79b9de66bf5c7fb9e2e1c8d06e147b69e9942f4ee655350b7d1bf50",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/GLES2/gl2platform.h",
+      "sourceSha256": "f5da0747540a50be5f44aad264aae45bdf157a192c40f17487dd9a2f99c71b6c",
+      "selection": {
+        "byteStart": 51,
+        "byteEnd": 141
+      }
+    },
+    "extracted-notices/3rdparty/khronos/GLES3/gl3.h.txt": {
+      "bytes": 338,
+      "sha256": "1260a890c27bd9526abfd4ef9402fb53bf113a805d45285aefd19e40e27a8733",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/GLES3/gl3.h",
+      "sourceSha256": "c9c6fd133256d55da904c493efaeed4560bd01b362591918b86a78ecc440596f",
+      "selection": {
+        "byteStart": 89,
+        "byteEnd": 427
+      }
+    },
+    "extracted-notices/3rdparty/khronos/GLES3/gl31.h.txt": {
+      "bytes": 338,
+      "sha256": "ec1b7a05b185504e74ac1d35bc90b2007aed4cce8908ebc1572047fe49cb5209",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/GLES3/gl31.h",
+      "sourceSha256": "612fc3a3c483baa3b04dfa6be3cb44217ad5ebb92c3af05531dcac2c159b177a",
+      "selection": {
+        "byteStart": 91,
+        "byteEnd": 429
+      }
+    },
+    "extracted-notices/3rdparty/khronos/GLES3/gl32.h.txt": {
+      "bytes": 338,
+      "sha256": "ec1b7a05b185504e74ac1d35bc90b2007aed4cce8908ebc1572047fe49cb5209",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/GLES3/gl32.h",
+      "sourceSha256": "e580e7db6bfc6b86860ae6b02fa27eb9acfe6726bab71f9c268568cdbf80baea",
+      "selection": {
+        "byteStart": 91,
+        "byteEnd": 429
+      }
+    },
+    "extracted-notices/3rdparty/khronos/GLES3/gl3platform.h.txt": {
+      "bytes": 90,
+      "sha256": "3fd4bc0fa79b9de66bf5c7fb9e2e1c8d06e147b69e9942f4ee655350b7d1bf50",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/GLES3/gl3platform.h",
+      "sourceSha256": "a9e060dae5a2b11c5a889b679692b7089a10a7e03ebfbb6cf28217f6e322fb08",
+      "selection": {
+        "byteStart": 51,
+        "byteEnd": 141
+      }
+    },
+    "extracted-notices/3rdparty/khronos/KHR/khrplatform.h.txt": {
+      "bytes": 1146,
+      "sha256": "fd7c88f69e70ffa778137ba0bc8267fa8dd83189365d9ff5a2533161432b3d0b",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/KHR/khrplatform.h",
+      "sourceSha256": "7b1e01aaa7ad8f6fc34b5c7bdf79ebf5189bb09e2c4d2e79fc5d350623d11e83",
+      "selection": {
+        "byteStart": 51,
+        "byteEnd": 1197
+      }
+    },
+    "extracted-notices/3rdparty/khronos/gl/glcorearb.h.txt": {
+      "bytes": 338,
+      "sha256": "1260a890c27bd9526abfd4ef9402fb53bf113a805d45285aefd19e40e27a8733",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/gl/glcorearb.h",
+      "sourceSha256": "b0993147784136e1aaf2f68c98a3340c0deae2933b1c0e8e3970d53bb9c28b56",
+      "selection": {
+        "byteStart": 95,
+        "byteEnd": 433
+      }
+    },
+    "extracted-notices/3rdparty/khronos/gl/glext.h.txt": {
+      "bytes": 338,
+      "sha256": "1260a890c27bd9526abfd4ef9402fb53bf113a805d45285aefd19e40e27a8733",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/gl/glext.h",
+      "sourceSha256": "02ae17e06d22e4611c29e406ae1dd755783045fe3a704bf70c863f822137dd26",
+      "selection": {
+        "byteStart": 87,
+        "byteEnd": 425
+      }
+    },
+    "extracted-notices/3rdparty/khronos/glx/glxext.h.txt": {
+      "bytes": 338,
+      "sha256": "ec1b7a05b185504e74ac1d35bc90b2007aed4cce8908ebc1572047fe49cb5209",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/glx/glxext.h",
+      "sourceSha256": "1649a24997d9bd448f52e3d59c67fc3985b04433251efb584b62ae2d4294ef36",
+      "selection": {
+        "byteStart": 91,
+        "byteEnd": 429
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_icd.h.txt": {
+      "bytes": 171,
+      "sha256": "e05c98c3ace3e52a3f82e831551e839ba9dfb903a8f1164376a89023aece367f",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_icd.h",
+      "sourceSha256": "15d092840ca6d45fca3ccdc50cf021943e6c88aefe2a730c391f26d60bba9018",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 171
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_layer.h.txt": {
+      "bytes": 171,
+      "sha256": "e05c98c3ace3e52a3f82e831551e839ba9dfb903a8f1164376a89023aece367f",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_layer.h",
+      "sourceSha256": "bfe6804d3f527138fcfebb0845c1c0077c5718725bf338be09b0f9be3e8dede5",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 171
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_platform.h.txt": {
+      "bytes": 93,
+      "sha256": "e5bacdf3529a63389f85c04dd4282d79112fde417e24235b1b4da7b4e806e579",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_platform.h",
+      "sourceSha256": "949d517bb83e1d88fd4f1cef02bd3cb9ab50d44e8354cc68227cf2dccfdd3307",
+      "selection": {
+        "byteStart": 29,
+        "byteEnd": 122
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_av1std.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_av1std.h",
+      "sourceSha256": "9b4ebcef0d6844b226803fa91b4c4c8bf9eb941aa31b19cea48ded0886a8f9e2",
+      "selection": {
+        "byteStart": 77,
+        "byteEnd": 170
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_av1std_decode.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_av1std_decode.h",
+      "sourceSha256": "f03abf49fcaf2bd179d48d768164f9494264b58401b98899e8860ba297a1e7aa",
+      "selection": {
+        "byteStart": 91,
+        "byteEnd": 184
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_av1std_encode.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_av1std_encode.h",
+      "sourceSha256": "40f84c98d0341246ead3e864e1378df47d861505c5c139da5ed85c352d5e2300",
+      "selection": {
+        "byteStart": 91,
+        "byteEnd": 184
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_h264std.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_h264std.h",
+      "sourceSha256": "f6691f82e4637adda20e56d56951c673cc1ecdf2fa77e09cc8eba4b1f45118c1",
+      "selection": {
+        "byteStart": 79,
+        "byteEnd": 172
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_h264std_decode.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_h264std_decode.h",
+      "sourceSha256": "8c4682860954d6bfc603e200d9e12586bc57265bd37b73a12b1ecf0c1ad42721",
+      "selection": {
+        "byteStart": 93,
+        "byteEnd": 186
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_h264std_encode.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_h264std_encode.h",
+      "sourceSha256": "75cc54e489b1ec7e3c635680cabaf7c9c2ddd4071a485440e5368e76ede30a85",
+      "selection": {
+        "byteStart": 93,
+        "byteEnd": 186
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_h265std.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_h265std.h",
+      "sourceSha256": "01b5f3d0fd9d273a68ed90f898ba94c05c0305280a753bf95fab60d60727c22e",
+      "selection": {
+        "byteStart": 79,
+        "byteEnd": 172
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_h265std_decode.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_h265std_decode.h",
+      "sourceSha256": "926a24d94afed2b1ab030e81c3b9e2e6730cca530f7a5a5bd821e7b896b93a41",
+      "selection": {
+        "byteStart": 93,
+        "byteEnd": 186
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_h265std_encode.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_h265std_encode.h",
+      "sourceSha256": "8a56e0c78496affa84eca39ec0f5636df681c04623dd0291aeeadd012df324be",
+      "selection": {
+        "byteStart": 93,
+        "byteEnd": 186
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_vp9std.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_vp9std.h",
+      "sourceSha256": "e18e20b197945929d5871836bfde923e38b350b09e1cbe430f1bd802d9eda34e",
+      "selection": {
+        "byteStart": 77,
+        "byteEnd": 170
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_vp9std_decode.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codec_vp9std_decode.h",
+      "sourceSha256": "c3929bbdd0ab79128c7f9bfb9641c9a017b3983529315b771caaafc74fdbb89a",
+      "selection": {
+        "byteStart": 91,
+        "byteEnd": 184
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codecs_common.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vk_video/vulkan_video_codecs_common.h",
+      "sourceSha256": "be6d2495d19e96aca6aa5c11e5c418d1cd72beac23fe19eb9169c06e2843f0af",
+      "selection": {
+        "byteStart": 79,
+        "byteEnd": 172
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan.h",
+      "sourceSha256": "72b952cc6de70ee12d118d3095e80346b42ff01cfc6f2bbb37ec01800eab1da6",
+      "selection": {
+        "byteStart": 39,
+        "byteEnd": 132
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_android.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_android.h",
+      "sourceSha256": "49cd5e53156cb9e36fa03d81a5f1b8c1e93428e3499698309398d66dc3872948",
+      "selection": {
+        "byteStart": 55,
+        "byteEnd": 148
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_beta.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_beta.h",
+      "sourceSha256": "0c8306cc75db2a51fe5c29654afde8587f44fc84c2d123eaadf538e86dd0541c",
+      "selection": {
+        "byteStart": 49,
+        "byteEnd": 142
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_core.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_core.h",
+      "sourceSha256": "55c06a17793bb1a9d752aa0906116fff9d1fb74f5dd3896777b92f124c9637aa",
+      "selection": {
+        "byteStart": 49,
+        "byteEnd": 142
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_directfb.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_directfb.h",
+      "sourceSha256": "4c6be34ee27f2fce4870c4046304b0c53f1fe62b13a4c21da8d537ec4cf8b965",
+      "selection": {
+        "byteStart": 57,
+        "byteEnd": 150
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_fuchsia.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_fuchsia.h",
+      "sourceSha256": "8a7a0c52e8c1ab41ede66bdabc32057255a7b385441d67dd4023121de5801194",
+      "selection": {
+        "byteStart": 55,
+        "byteEnd": 148
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_ggp.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_ggp.h",
+      "sourceSha256": "97cb1776742a4d8aae9f258ce908da76d0466da8864a5036aaca834af5f62e8d",
+      "selection": {
+        "byteStart": 47,
+        "byteEnd": 140
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_ios.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_ios.h",
+      "sourceSha256": "8bb052cc162b4086c0f1cd29a5ed11ccf921b8ee83551194394b86efd249c572",
+      "selection": {
+        "byteStart": 47,
+        "byteEnd": 140
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_macos.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_macos.h",
+      "sourceSha256": "00f532e9b7229488ac9932c2b391d74e9e8566ed91d0dbbad10e15dc356c9293",
+      "selection": {
+        "byteStart": 51,
+        "byteEnd": 144
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_metal.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_metal.h",
+      "sourceSha256": "8f84536896b8d3c6c49883ce34242f8922840617d0b184b338c0f83da5bfaaaa",
+      "selection": {
+        "byteStart": 51,
+        "byteEnd": 144
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_ohos.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_ohos.h",
+      "sourceSha256": "9da9b4f1a23adc0b705450ce4b5c934dff2fd1eb8cdf4ac3273465420fc9475a",
+      "selection": {
+        "byteStart": 49,
+        "byteEnd": 142
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_screen.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_screen.h",
+      "sourceSha256": "ffe2e63fbea5f0a9a7948a998eb7e1085e1f7cd5fd55b3d9a0146fe1aa8307bd",
+      "selection": {
+        "byteStart": 53,
+        "byteEnd": 146
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_vi.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_vi.h",
+      "sourceSha256": "8caacbb6eccae5946fb367145ba5222b85d4747a3f8b30632fdfca0503f0c339",
+      "selection": {
+        "byteStart": 45,
+        "byteEnd": 138
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_wayland.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_wayland.h",
+      "sourceSha256": "d43ca1c45cd4b2e1119c168b780e2864205ad8119e5f42d9d99aa29d2654a3f2",
+      "selection": {
+        "byteStart": 55,
+        "byteEnd": 148
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_win32.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_win32.h",
+      "sourceSha256": "0b11442e7efa0d5b6732b9964edf6dbdf3f6cf1dd58afe7572cc9b7f6de24317",
+      "selection": {
+        "byteStart": 51,
+        "byteEnd": 144
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_xcb.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_xcb.h",
+      "sourceSha256": "1e1525fc64826ab3ea9e8a6ee6a618ef14db3e27397fcf8fb070bb1ddaf00c0b",
+      "selection": {
+        "byteStart": 47,
+        "byteEnd": 140
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_xlib.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_xlib.h",
+      "sourceSha256": "82346aaa80a5c984b6a26f55c7c363c65be43029da539ba0fbdfea9840051cca",
+      "selection": {
+        "byteStart": 49,
+        "byteEnd": 142
+      }
+    },
+    "extracted-notices/3rdparty/khronos/vulkan-local/vulkan_xlib_xrandr.h.txt": {
+      "bytes": 93,
+      "sha256": "38632387deb5c8e6c7594106b3ea88781d16dee36263d9b0d0f6ebac5c2dbbd0",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/vulkan-local/vulkan_xlib_xrandr.h",
+      "sourceSha256": "da5d5311bcffa49c614e9f397784e44668466890aeaf4e54c2e0064c20259089",
+      "selection": {
+        "byteStart": 63,
+        "byteEnd": 156
+      }
+    },
+    "extracted-notices/3rdparty/khronos/wgl/wgl.h.txt": {
+      "bytes": 338,
+      "sha256": "ec1b7a05b185504e74ac1d35bc90b2007aed4cce8908ebc1572047fe49cb5209",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/wgl/wgl.h",
+      "sourceSha256": "a2b538eefd681e9e633c1ac88aa7652cde9333549bdb528f555bd96a7c176910",
+      "selection": {
+        "byteStart": 85,
+        "byteEnd": 423
+      }
+    },
+    "extracted-notices/3rdparty/khronos/wgl/wglext.h.txt": {
+      "bytes": 338,
+      "sha256": "ec1b7a05b185504e74ac1d35bc90b2007aed4cce8908ebc1572047fe49cb5209",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/khronos/wgl/wglext.h",
+      "sourceSha256": "bbcdef3e967aec658f024e2ca5e3f5361feebba4480051fb55ecb80170c55abc",
+      "selection": {
+        "byteStart": 91,
+        "byteEnd": 429
+      }
+    },
+    "3rdparty/l-smash/LICENSE": {
+      "bytes": 738,
+      "sha256": "f778761540555e63528418e75784c0ed7bf2b89ab11f5ddbfd4bec7aa540e79d",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/l-smash/LICENSE",
+      "sourceSha256": "f778761540555e63528418e75784c0ed7bf2b89ab11f5ddbfd4bec7aa540e79d",
+      "selection": "full"
+    },
+    "3rdparty/meshoptimizer/LICENSE.md": {
+      "bytes": 1079,
+      "sha256": "e4a26033e3551fb2722888949fbb41e77aee628e8e8f04dcffeee301aa7e5634",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/meshoptimizer/LICENSE.md",
+      "sourceSha256": "e4a26033e3551fb2722888949fbb41e77aee628e8e8f04dcffeee301aa7e5634",
+      "selection": "full"
+    },
+    "3rdparty/metal-cpp/LICENSE.txt": {
+      "bytes": 11344,
+      "sha256": "f4e92c7fe2aa066e294c0da9d08683dc9fb741ee6e6debbfad99a0c96e07c1f2",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/metal-cpp/LICENSE.txt",
+      "sourceSha256": "f4e92c7fe2aa066e294c0da9d08683dc9fb741ee6e6debbfad99a0c96e07c1f2",
+      "selection": "full"
+    },
+    "3rdparty/native_app_glue/LICENSE": {
+      "bytes": 577,
+      "sha256": "396e2d75715e8b4d1029ded55ae92832c8ab9c58148969653d34931248739b95",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/native_app_glue/LICENSE",
+      "sourceSha256": "396e2d75715e8b4d1029ded55ae92832c8ab9c58148969653d34931248739b95",
+      "selection": "full"
+    },
+    "extracted-notices/3rdparty/renderdoc/renderdoc_app.h.txt": {
+      "bytes": 1306,
+      "sha256": "cc9e0fd4d39cd88b47e108fd23fb05c5f0bb4e92bca564a893a4b79ae1fcf8d3",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/renderdoc/renderdoc_app.h",
+      "sourceSha256": "2100bdc0b1a3d49b7b1b9a893907deeb770867a8fa64a3ea59dc36c1619e9f4e",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 1306
+      }
+    },
+    "3rdparty/sdf/LICENSE.txt": {
+      "bytes": 1168,
+      "sha256": "a994f406e741c6a17981a7abe90e7eba772adca750270453eabd4ed92417c3dc",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/sdf/LICENSE.txt",
+      "sourceSha256": "a994f406e741c6a17981a7abe90e7eba772adca750270453eabd4ed92417c3dc",
+      "selection": "full"
+    },
+    "3rdparty/spirv-cross/LICENSE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/spirv-cross/LICENSE",
+      "sourceSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "selection": "full"
+    },
+    "3rdparty/spirv-headers/LICENSE": {
+      "bytes": 23503,
+      "sha256": "ea43b1de38a6f90c488800d66dec1ed671e68cda530266bc96951fb5b6307613",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/spirv-headers/LICENSE",
+      "sourceSha256": "ea43b1de38a6f90c488800d66dec1ed671e68cda530266bc96951fb5b6307613",
+      "selection": "full"
+    },
+    "3rdparty/spirv-tools/LICENSE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/spirv-tools/LICENSE",
+      "sourceSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "selection": "full"
+    },
+    "3rdparty/stb/LICENSE": {
+      "bytes": 2510,
+      "sha256": "bebfe904b14301657e4e5d655c811d51fd31b97c455b9cc2d8600d6bac6cff63",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/stb/LICENSE",
+      "sourceSha256": "bebfe904b14301657e4e5d655c811d51fd31b97c455b9cc2d8600d6bac6cff63",
+      "selection": "full"
+    },
+    "LICENSE": {
+      "bytes": 1299,
+      "sha256": "ac2e0d253b1584316a36a0fae1d4407fa3ebcb15f27021ab479b23d27f0c9c08",
+      "encoding": "utf-8-sig",
+      "sourcePath": "LICENSE",
+      "sourceSha256": "ac2e0d253b1584316a36a0fae1d4407fa3ebcb15f27021ab479b23d27f0c9c08",
+      "selection": "full"
+    }
+  },
+  "limitations": [
+    "Source notice superset, including optional tools/examples/platforms; not proof all code is linked.",
+    "Nested per-file attribution and final candidate coverage remain under review."
+  ]
+}

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{54287CDD-5CBF-459F-A865-68D745E547C0}</ProjectGuid>
+    <RootNamespace>GraphicsSettingsTests</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ResourceCompile>
+      <PreprocessorDefinitions>FALCO_MODERN_BGFX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ClCompile>
+      <PreprocessorDefinitions>FALCO_MODERN_BGFX=1;BOOST_ALL_NO_LIB;BX_CONFIG_DEBUG=0;_CRT_SECURE_NO_WARNINGS;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;_SILENCE_FPOS_SEEKPOS_DEPRECATION_WARNING;_CRT_NONSTDC_NO_DEPRECATE</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../out/falco/manifold-headers;../ModernBgfxCompat;../out/modern-bgfx/src/bx/include/compat/msvc;../out/modern-bgfx/src/bx/include;../out/modern-bgfx/src/bimg/include;../out/modern-bgfx/src/bgfx/include;../out/deps/w4/include;../out/deps/w7/include;../Engine/Navigation/DebugUtils/Include;../Engine/Navigation/Detour/Include;../Engine/Navigation/DetourCrowd/Include;../Engine/Navigation/DetourTileCache/Include;../Engine/Navigation/Recast/Include;../out/deps/w8/Mono/include/mono-2.0</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <AdditionalOptions>/FS /Zc:__cplusplus /Zc:preprocessor %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>version.lib;Imm32.lib;setupapi.lib;winmm.lib;opengl32.lib;psapi.lib;bcrypt.lib;../out/deps/w7/lib/libboost_filesystem-vc143-mt-s-x64-1_74.lib;../out/deps/w7/lib/libboost_system-vc143-mt-s-x64-1_74.lib;../out/deps/w7/lib/libboost_serialization-vc143-mt-s-x64-1_74.lib;../out/deps/w7/lib/libboost_regex-vc143-mt-s-x64-1_74.lib;../out/deps/w7/lib/libboost_iostreams-vc143-mt-s-x64-1_74.lib;../out/deps/w7/lib/libboost_date_time-vc143-mt-s-x64-1_74.lib;../out/deps/w7/lib/libboost_thread-vc143-mt-s-x64-1_74.lib;../out/deps/w7/lib/libboost_chrono-vc143-mt-s-x64-1_74.lib;../out/deps/w4/lib/SDL2.lib;../out/deps/w4/lib/SDL2main.lib;../out/modern-bgfx/src/bgfx/.build/win64_vs2022/bin/bgfxRelease.lib;../out/modern-bgfx/src/bgfx/.build/win64_vs2022/bin/bimg_decodeRelease.lib;../out/modern-bgfx/src/bgfx/.build/win64_vs2022/bin/bimgRelease.lib;../out/modern-bgfx/src/bgfx/.build/win64_vs2022/bin/bxRelease.lib;../out/deps/w6/lib/assimp-vc143-mt.lib;../out/deps/w3/lib/FreeImageLib.lib;../out/deps/w2/lib/bc7enc.lib;../out/deps/w5/lib/BulletCollision.lib;../out/deps/w5/lib/BulletDynamics.lib;../out/deps/w5/lib/BulletInverseDynamics.lib;../out/deps/w5/lib/BulletSoftBody.lib;../out/deps/w5/lib/LinearMath.lib;../out/deps/w9/lib/OpenAL32.lib;../out/deps/w1/lib/libogg_static.lib;../out/deps/w1/lib/libvorbis_static.lib;../out/deps/w1/lib/libvorbisfile_static.lib;../out/deps/w8/Mono/lib/mono-2.0-sgen.lib;../out/deps/w3/lib/freetype.lib;../out/deps/w2/lib/zip.lib;../out/deps/w10/lib/manifold.lib;../out/falco/bin/Engine/Engine.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalDependencies>gdi32.lib;ole32.lib;oleaut32.lib;shell32.lib;advapi32.lib;propsys.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <PropertyGroup>
+    <TargetName>GraphicsSettingsTests</TargetName>
+    <OutDir>$(MSBuildThisFileDirectory)..\out\falco\bin\GraphicsSettingsTests\</OutDir>
+    <IntDir>$(MSBuildThisFileDirectory)..\out\falco\obj\GraphicsSettingsTests\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GraphicsSettingsSerialization.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "upstreamCommit": "9e22c75b65c0f804eb58ffacc78442a89e68aff2",
+  "licenseUrl": "https://raw.githubusercontent.com/tronkko/dirent/9e22c75b65c0f804eb58ffacc78442a89e68aff2/LICENSE",
+  "licenseSha256": "a413acdd9d43cfa6761cc6599dff2dc43d90cf572f7a9d4d948b1fd40e727de7",
+  "upstreamHeaderSha256": "ebbd8bc257defdcb57454d1feb022001e8cd80815a0d3e8e462943504ba9251f",
+  "localHeaderSha256": "aa57b28db198fa6987ccf91437a19aa9c3a5d5b771c63e2c4544a2ff69b602eb",
+  "exactMatch": false,
+  "limitations": [
+    "Closest inspected historical header, not proof of original import commit. Local differences recorded separately."
+  ]
+}

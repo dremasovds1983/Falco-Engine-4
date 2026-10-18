@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "capturedAt": "2026-07-22",
+  "source": "UNAPPROVED isolated reproducibility candidate; see coherent-candidate.json",
+  "repositories": {
+    "bx": {
+      "url": "https://github.com/bkaradzic/bx.git",
+      "commit": "5a2b876258ab5843d5e1dfde695b127baf9e354a"
+    },
+    "bimg": {
+      "url": "https://github.com/bkaradzic/bimg.git",
+      "commit": "da38bface6384cdd7f69733b08fb58e57a63cffa"
+    },
+    "bgfx": {
+      "url": "https://github.com/bkaradzic/bgfx.git",
+      "commit": "65551a7db19240b4d105f09e665190d196243d92"
+    }
+  },
+  "configuration": {
+    "generator": "vs2022",
+    "platform": "x64",
+    "buildConfiguration": "Release",
+    "genieOptions": [
+      "--with-tools",
+      "--with-amalgamated"
+    ],
+    "expectedVcxprojCount": 21,
+    "expectedSolutionProjectEntries": 26,
+    "expectedGeneratedFiles": 64
+  },
+  "artifacts": {
+    "bxRelease.lib": {
+      "bytes": 1584136,
+      "sha256": "9150E588DF3C921D4F7CBE7F159459E2093D144632B47395120029113DA50BA1"
+    },
+    "bimgRelease.lib": {
+      "bytes": 3202224,
+      "sha256": "4DDD7D096509B7302C6D6347E6F02164B15DC8FAD1E55135975D56440FFACE50"
+    },
+    "bimg_decodeRelease.lib": {
+      "bytes": 8159204,
+      "sha256": "E09697887E1333E1410E18CEF81222CBCBB340BB3B914E90068473277ACAF534"
+    },
+    "bgfxRelease.lib": {
+      "bytes": 9186256,
+      "sha256": "03760110FAC23C1F91A2ABAB8D16DFD11C138377D7947DA7EF8D78E63E0CAF93"
+    },
+    "shadercRelease.exe": {
+      "bytes": 10238464,
+      "sha256": "197C9B39C43408B0E8E9DCF77D8FC3CDAA200668530EBCC2800D502DF3170CB3"
+    }
+  }
+}

@@ -1,0 +1,965 @@
+{
+  "$schema": "./deps.lock.schema.json",
+  "schemaVersion": 3,
+  "approvedBy": "UNAPPROVED: isolated reproducibility candidate; original source approval remains in workspace lock",
+  "approvedAt": "2026-07-26",
+  "mode": "preparation",
+  "toolchain": {
+    "vs": "[17.0,18.0)",
+    "toolset": "v143",
+    "arch": "x64",
+    "crt": "MT",
+    "config": "Release"
+  },
+  "components": {
+    "bx": {
+      "kind": "git",
+      "wave": "core",
+      "upstream": "https://github.com/bkaradzic/bx",
+      "version": "production-v1",
+      "commit": "5a2b876258ab5843d5e1dfde695b127baf9e354a",
+      "archive": {
+        "url": "https://codeload.github.com/bkaradzic/bx/tar.gz/5a2b876258ab5843d5e1dfde695b127baf9e354a",
+        "sha256": "3F7E07B24429ACA9A262ED84489F461650DEBA93890F3FE4E9263D85E4A5E411",
+        "bytes": 1510054
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "LICENSE",
+          "sha256": "AC2E0D253B1584316A36A0FAE1D4407FA3EBCB15F27021AB479B23D27F0C9C08",
+          "license": "BSD-2-Clause"
+        }
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "genie",
+        "flags": [
+          "--with-tools",
+          "--with-amalgamated",
+          "vs2022"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/modern-bgfx/src/bgfx/.build/win64_vs2022/bin/bxRelease.lib",
+          "sha256": "9150E588DF3C921D4F7CBE7F159459E2093D144632B47395120029113DA50BA1",
+          "bytes": 1584136
+        }
+      ],
+      "dependsOn": []
+    },
+    "bimg": {
+      "kind": "git",
+      "wave": "core",
+      "upstream": "https://github.com/bkaradzic/bimg",
+      "version": "production-v1",
+      "commit": "da38bface6384cdd7f69733b08fb58e57a63cffa",
+      "archive": {
+        "url": "https://codeload.github.com/bkaradzic/bimg/tar.gz/da38bface6384cdd7f69733b08fb58e57a63cffa",
+        "sha256": "0FB9440CEB7288E4A5C93126248342B262156EB6D8122ED09A478FBD2F88C74C",
+        "bytes": 1498006
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "LICENSE",
+          "sha256": "AC2E0D253B1584316A36A0FAE1D4407FA3EBCB15F27021AB479B23D27F0C9C08",
+          "license": "BSD-2-Clause"
+        }
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "genie",
+        "flags": [
+          "--with-tools",
+          "--with-amalgamated",
+          "vs2022"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/modern-bgfx/src/bgfx/.build/win64_vs2022/bin/bimgRelease.lib",
+          "sha256": "4DDD7D096509B7302C6D6347E6F02164B15DC8FAD1E55135975D56440FFACE50",
+          "bytes": 3202224
+        },
+        {
+          "path": "out/modern-bgfx/src/bgfx/.build/win64_vs2022/bin/bimg_decodeRelease.lib",
+          "sha256": "E09697887E1333E1410E18CEF81222CBCBB340BB3B914E90068473277ACAF534",
+          "bytes": 8159204
+        }
+      ],
+      "dependsOn": [
+        "bx"
+      ]
+    },
+    "genie": {
+      "kind": "in-tree",
+      "wave": "W0",
+      "upstream": "https://github.com/bkaradzic/GENie",
+      "version": "official-prebuilt-in-production-v1-bx",
+      "commit": "af2285653cc010e0930518d49964c95ea30d7115",
+      "licenseFiles": [
+        {
+          "pathInSource": "LICENSE",
+          "sha256": "360AC70B85D4755EAE37DD4804AC7C5E6C3971BFEAE6AC3A0BF7BEB60F8BC6D2",
+          "license": "BSD-3-Clause"
+        }
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "in-tree",
+        "flags": [
+          "verify-only",
+          "no-execution-before-sha256"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/modern-bgfx/src/bx/tools/bin/windows/genie.exe",
+          "sha256": "72461C6A69742DCB66F30470F98FAF6DFE47D86333FC360E2FA9CA024EE2297A",
+          "bytes": 575488
+        }
+      ],
+      "dependsOn": [
+        "bx"
+      ],
+      "sourceOffer": {
+        "url": "https://codeload.github.com/bkaradzic/GENie/tar.gz/af2285653cc010e0930518d49964c95ea30d7115",
+        "sha256": "202B235D8DF38E9F28D6EE9E44C0003774BEE83F1143ED72E25DE8F91C86279A"
+      }
+    },
+    "bgfx": {
+      "kind": "git",
+      "wave": "core",
+      "upstream": "https://github.com/bkaradzic/bgfx",
+      "version": "production-v1",
+      "commit": "65551a7db19240b4d105f09e665190d196243d92",
+      "archive": {
+        "url": "https://codeload.github.com/bkaradzic/bgfx/tar.gz/65551a7db19240b4d105f09e665190d196243d92",
+        "sha256": "43B0F6C9B9CD3C939F61071DE8FD2B3217EAF23C99F169D2E1FF26C0FEFEC75C",
+        "bytes": 120869246
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "LICENSE",
+          "sha256": "AC2E0D253B1584316A36A0FAE1D4407FA3EBCB15F27021AB479B23D27F0C9C08",
+          "license": "BSD-2-Clause"
+        }
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "genie",
+        "flags": [
+          "--with-tools",
+          "--with-amalgamated",
+          "vs2022"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/modern-bgfx/src/bgfx/.build/win64_vs2022/bin/bgfxRelease.lib",
+          "sha256": "03760110FAC23C1F91A2ABAB8D16DFD11C138377D7947DA7EF8D78E63E0CAF93",
+          "bytes": 9186256
+        },
+        {
+          "path": "out/modern-bgfx/src/bgfx/.build/win64_vs2022/bin/shadercRelease.exe",
+          "sha256": "197C9B39C43408B0E8E9DCF77D8FC3CDAA200668530EBCC2800D502DF3170CB3",
+          "bytes": 10238464
+        }
+      ],
+      "dependsOn": [
+        "bx",
+        "bimg",
+        "genie"
+      ]
+    },
+    "libogg": {
+      "kind": "archive",
+      "wave": "W1",
+      "upstream": "https://xiph.org/ogg/",
+      "version": "1.3.3",
+      "archive": {
+        "url": "https://downloads.xiph.org/releases/ogg/libogg-1.3.3.tar.gz",
+        "sha256": "C2E8A485110B97550F453226EC644EBAC6CB29D1CAEF2902C007EDAB4308D985",
+        "bytes": 579853
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "COPYING",
+          "sha256": "D2AB5758336489DA61C12CC5BB757DA5339C4AE9001F9BB0562B4370249AF814",
+          "license": "BSD-3-Clause"
+        }
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "msbuild",
+        "flags": [
+          "generated-v143-project",
+          "Configuration=Release",
+          "Platform=x64",
+          "RuntimeLibrary=MultiThreaded",
+          "static"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w1/lib/libogg_static.lib",
+          "sha256": "7E902C4AEDE97913903D1FBE7345233CE45E11B59B049A66135D891863E2B49D",
+          "bytes": 42366
+        }
+      ],
+      "dependsOn": []
+    },
+    "libvorbis": {
+      "kind": "archive",
+      "wave": "W1",
+      "upstream": "https://xiph.org/vorbis/",
+      "version": "1.3.6",
+      "archive": {
+        "url": "https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.6.tar.gz",
+        "sha256": "6ED40E0241089A42C48604DC00E362BEEE00036AF2D8B3F46338031C9E0351CB",
+        "bytes": 1634357
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "COPYING",
+          "sha256": "29E9914E6173B7061B7D48C25E6159FC1438326738BC047CC7248ABC01B271F6",
+          "license": "BSD-3-Clause"
+        }
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "msbuild",
+        "flags": [
+          "generated-v143-project",
+          "Configuration=Release",
+          "Platform=x64",
+          "RuntimeLibrary=MultiThreaded",
+          "static"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w1/lib/libvorbis_static.lib",
+          "sha256": "48584DD8C2571DEC84BC91EE42B3AC8930ACC9479BD33484193CA4EA850B1023",
+          "bytes": 1060778
+        },
+        {
+          "path": "out/deps/w1/lib/libvorbisfile_static.lib",
+          "sha256": "20EA58116C846DE25B610E7C163575550395C83E2B635B34F0B8D2ECBF88B632",
+          "bytes": 66102
+        }
+      ],
+      "dependsOn": [
+        "libogg"
+      ]
+    },
+    "zlib": {
+      "kind": "archive",
+      "wave": "W2",
+      "upstream": "https://zlib.net/",
+      "version": "1.3.2",
+      "archive": {
+        "url": "https://www.zlib.net/zlib-1.3.2.tar.gz",
+        "sha256": "bb329a0a2cd0274d05519d61c667c062e06990d72e125ee2dfa8de64f0119d16",
+        "bytes": 1502830
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "LICENSE",
+          "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2",
+          "license": "Zlib"
+        }
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "cmake",
+        "flags": [
+          "-DZLIB_BUILD_SHARED=OFF",
+          "-DZLIB_BUILD_STATIC=ON",
+          "-DZLIB_BUILD_TESTING=OFF",
+          "-DZLIB_INSTALL=OFF",
+          "-DZLIB_PREFIX=OFF",
+          "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w2/lib/zs.lib",
+          "sha256": "5E37FB12086A20FF16AC9F4615C09AC06DB3D7982767FA4419D4200C36FFCFB7",
+          "bytes": 198726
+        }
+      ],
+      "dependsOn": []
+    },
+    "libzip": {
+      "kind": "archive",
+      "wave": "W2",
+      "upstream": "https://libzip.org/",
+      "version": "1.11.4",
+      "archive": {
+        "url": "https://libzip.org/download/libzip-1.11.4.tar.gz",
+        "sha256": "82e9f2f2421f9d7c2466bbc3173cd09595a88ea37db0d559a9d0a2dc60dc722e",
+        "bytes": 1301153
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "LICENSE",
+          "sha256": "01c022eca6d566e2e8792fd0f091a28653b2a608319922bcd4de91c49d1438e1",
+          "license": "BSD-3-Clause"
+        }
+      ],
+      "patches": [
+        {
+          "file": "patches/libzip/001-rename-core-entrypoints.patch",
+          "sha256": "eedd415dafefee14b920684f2ec5ba4ec79d3b3cb0348895d254c20d37d8615a",
+          "reason": "rename public zip_open/zip_close to zip_open_z/zip_close_z to avoid duplicate-symbol clash with the kuba--/zip copy bundled in assimp (DEC-021, variant P)"
+        }
+      ],
+      "buildProfile": {
+        "system": "cmake",
+        "flags": [
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DBUILD_TOOLS=OFF",
+          "-DBUILD_REGRESS=OFF",
+          "-DBUILD_OSSFUZZ=OFF",
+          "-DBUILD_EXAMPLES=OFF",
+          "-DBUILD_DOC=OFF",
+          "-DLIBZIP_DO_INSTALL=OFF",
+          "-DENABLE_COMMONCRYPTO=OFF",
+          "-DENABLE_GNUTLS=OFF",
+          "-DENABLE_MBEDTLS=OFF",
+          "-DENABLE_OPENSSL=OFF",
+          "-DENABLE_WINDOWS_CRYPTO=OFF",
+          "-DENABLE_BZIP2=OFF",
+          "-DENABLE_LZMA=OFF",
+          "-DENABLE_ZSTD=OFF",
+          "-DENABLE_FDOPEN=OFF",
+          "-DZLIB_INCLUDE_DIR=${REPO_ROOT}/out/deps/w2/include",
+          "-DZLIB_LIBRARY=${REPO_ROOT}/out/deps/w2/lib/zs.lib",
+          "-DCMAKE_POLICY_DEFAULT_CMP0091=NEW",
+          "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w2/lib/zip.lib",
+          "sha256": "C5DCC990E4A7EF6A20CD1107D78771164C5A5B04276C944C39DE1C48026D39E8",
+          "bytes": 469554
+        }
+      ],
+      "dependsOn": [
+        "zlib"
+      ]
+    },
+    "bc7enc": {
+      "kind": "in-tree",
+      "wave": "W2",
+      "upstream": "https://github.com/richgel999/bc7enc",
+      "version": "in-tree-approved",
+      "licenseFiles": [
+        {
+          "pathInSource": "bc7enc16.c",
+          "sha256": "2103cf1a67f5fed24f4aea95e9e220e6792f88231caa214faa235cf2c6e15b10",
+          "license": "MIT OR Unlicense"
+        }
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "cl",
+        "flags": [
+          "/TC",
+          "/O2",
+          "/Ob2",
+          "/DNDEBUG",
+          "/MT",
+          "/GS",
+          "/Gy",
+          "/Zc:inline"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w2/lib/bc7enc.lib",
+          "sha256": "1FF6C13BF0422D57F5A7ACFA8E00B2BB58E5138F670F0559C8C066750876CB81",
+          "bytes": 51440
+        }
+      ],
+      "dependsOn": []
+    },
+    "freetype": {
+      "kind": "archive",
+      "wave": "W3",
+      "upstream": "https://freetype.org/",
+      "version": "2.12.1",
+      "archive": {
+        "url": "https://download.savannah.gnu.org/releases/freetype/freetype-2.12.1.tar.gz",
+        "sha256": "efe71fd4b8246f1b0b1b9bfca13cfff1c9ad85930340c27df469733bbb620938",
+        "bytes": 3789426
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "docs/FTL.TXT",
+          "sha256": "08c135755dd589039470f1fdbb400daaabaaa50d0b366d19cebff4d22986baa1",
+          "license": "FTL"
+        }
+      ],
+      "patches": [
+        {
+          "file": "patches/freetype/001-disable-gzip.patch",
+          "sha256": "0da84ce69eb6d86c81bafe20ee994a6ee955d88679d1a23954ba0b2999a2a90d",
+          "reason": "freetype 2.12.1 built without system zlib embeds its bundled zlib with public symbol names (ftgzip.obj defines inflate/inflateUndermine/crc32_z/zcalloc and the rest of the zlib surface - the 2.12.x unmodified-zlib import regression), which collides at engine link time with the zlib statically embedded in FreeImageLib.lib (30 x LNK2005 in section 80); the engine never loads gzip-compressed fonts, and commenting out FT_CONFIG_OPTION_USE_ZLIB makes src/gzip/ftgzip.c compile its no-zlib stub (FT_Stream_OpenGzip -> Unimplemented_Feature), removing every duplicate symbol (DEC-089)"
+        }
+      ],
+      "buildProfile": {
+        "system": "cmake",
+        "flags": [
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DFT_DISABLE_ZLIB=ON",
+          "-DFT_DISABLE_BZIP2=ON",
+          "-DFT_DISABLE_PNG=ON",
+          "-DFT_DISABLE_HARFBUZZ=ON",
+          "-DFT_DISABLE_BROTLI=ON",
+          "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+          "-DCMAKE_POLICY_DEFAULT_CMP0091=NEW",
+          "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w3/lib/freetype.lib",
+          "sha256": "51706259E7545B3CF3C9568BADF58BA00A0533ECBD3E736C90FA5EFE7D026F20",
+          "bytes": 2085534
+        }
+      ],
+      "dependsOn": []
+    },
+    "freeimage": {
+      "kind": "archive",
+      "wave": "W3",
+      "upstream": "https://freeimage.sourceforge.io/",
+      "version": "3.18.0",
+      "archive": {
+        "url": "https://downloads.sourceforge.net/project/freeimage/Source%20Distribution/3.18.0/FreeImage3180.zip",
+        "sha256": "f41379682f9ada94ea7b34fe86bf9ee00935a3147be41b6569c9605a53e438fd",
+        "bytes": 7415716
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "license-fi.txt",
+          "sha256": "0bb9a3123297c73ae6e19c70459fb0e58f313f67ca63176fd43f8e77668b8243",
+          "license": "FreeImage Public License 1.0"
+        }
+      ],
+      "expectedExecutables": [
+        "FreeImage/clean.bat",
+        "FreeImage/Wrapper/Delphi/_clean.bat",
+        "FreeImage/Wrapper/FreeImage.NET/cs/clean.bat",
+        "FreeImage/Wrapper/FreeImage.NET/cs/Library/build.bat",
+        "FreeImage/Wrapper/FreeImagePlus/clean.bat"
+      ],
+      "patches": [
+        {
+          "file": "patches/freeimage/001-remove-binary-function.patch",
+          "sha256": "a03c643f8ac3af451e4954cdf3424e270140cec246f961f8314d62a5e12f8784",
+          "reason": "remove the vestigial inheritance from std::binary_function in the bundled OpenEXR; the construct was removed from the standard library and the pinned v143 toolset rejects it; the only file in the tree using it (DEC-035)"
+        }
+      ],
+      "buildProfile": {
+        "system": "msbuild",
+        "flags": [
+          "Configuration=Release",
+          "Platform=x64",
+          "RuntimeLibrary=MultiThreaded",
+          "FREEIMAGE_LIB"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w3/lib/FreeImageLib.lib",
+          "sha256": "91A3FE58614F9C764BCBBFA110B34B9FC473676EC6C97278C116079DBF797DC4",
+          "bytes": 22844066
+        }
+      ],
+      "dependsOn": []
+    },
+    "sdl2": {
+      "kind": "archive",
+      "wave": "W4",
+      "upstream": "https://github.com/libsdl-org/SDL",
+      "version": "2.0.12",
+      "archive": {
+        "url": "https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.0.12.tar.gz",
+        "sha256": "522f3550a1a6b9dfbffcd4aefe53f80e55f541876be2d473cc7acd53babf7d5f",
+        "bytes": 5967111
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "COPYING.txt",
+          "sha256": "ae4df3759a726538607b84c00ab8f8a5567d9f38ad5397486eb9b5c5f626caef",
+          "license": "Zlib"
+        }
+      ],
+      "expectedExecutables": [
+        "SDL-release-2.0.12/android-project/gradlew.bat",
+        "SDL-release-2.0.12/build-scripts/windows-buildbot-zipper.bat",
+        "SDL-release-2.0.12/build-scripts/winrtbuild.bat",
+        "SDL-release-2.0.12/build-scripts/winrtbuild.ps1",
+        "SDL-release-2.0.12/visualtest/launch_harness.cmd"
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "cmake",
+        "flags": [
+          "-DSDL_SHARED=OFF",
+          "-DSDL_STATIC=ON",
+          "-DSDL_FORCE_STATIC_VCRT=ON",
+          "-DSDL_TEST=OFF",
+          "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+          "-DCMAKE_POLICY_DEFAULT_CMP0091=NEW",
+          "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w4/lib/SDL2.lib",
+          "sha256": "BE68DEC49088D974BE29C400D73FC1AE272F7EC0FC0836B8300D8DAFECAF7041",
+          "bytes": 4395988
+        },
+        {
+          "path": "out/deps/w4/lib/SDL2main.lib",
+          "sha256": "7BFD783D58145585F8E010A9772174A94DE66CD6762C76B399E5F8E881E6F875",
+          "bytes": 3792
+        }
+      ],
+      "dependsOn": []
+    },
+    "bullet": {
+      "kind": "archive",
+      "wave": "W5",
+      "upstream": "https://github.com/bulletphysics/bullet3",
+      "version": "3.24",
+      "archive": {
+        "url": "https://github.com/bulletphysics/bullet3/archive/refs/tags/3.24.tar.gz",
+        "sha256": "6b1e987d6f8156fa8a6468652f4eaad17b3e11252c9870359e5bca693e35780b",
+        "bytes": 139793021
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "LICENSE.txt",
+          "sha256": "885cd516a8420acb7c3e0b1a7119913b686495001ae564e3229740460e8cff59",
+          "license": "Zlib"
+        }
+      ],
+      "expectedExecutables": [
+        "bullet3-3.24/Extras/Serialize/HeaderGenerator/createDnaString.bat",
+        "bullet3-3.24/build3/bin2cpp.bat",
+        "bullet3-3.24/build3/premake4.exe",
+        "bullet3-3.24/build3/premake5.exe",
+        "bullet3-3.24/build3/stringify.bat",
+        "bullet3-3.24/build3/stringifyShaders.bat",
+        "bullet3-3.24/build_visual_studio_vr_pybullet_double.bat",
+        "bullet3-3.24/build_visual_studio_vr_pybullet_double_cmake.bat",
+        "bullet3-3.24/build_visual_studio_vr_pybullet_double_dynamic.bat",
+        "bullet3-3.24/build_visual_studio_without_pybullet_vr.bat",
+        "bullet3-3.24/examples/SharedMemory/grpc/proto/createProtobufs.bat",
+        "bullet3-3.24/examples/ThirdPartyLibs/openvr/bin/win32/openvr_api.dll",
+        "bullet3-3.24/examples/ThirdPartyLibs/openvr/bin/win64/openvr_api.dll"
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "cmake",
+        "flags": [
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DBUILD_BULLET2_DEMOS=OFF",
+          "-DBUILD_UNIT_TESTS=OFF",
+          "-DUSE_DOUBLE_PRECISION=OFF",
+          "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded",
+          "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+          "-DCMAKE_POLICY_DEFAULT_CMP0091=NEW"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w5/lib/BulletCollision.lib",
+          "sha256": "0FA4075845A3BBE3866B605A3A4B64D3ADD99C55B95ADD667C6D03BB0B891D08",
+          "bytes": 5454324
+        },
+        {
+          "path": "out/deps/w5/lib/BulletDynamics.lib",
+          "sha256": "8E3021D286D8FB94F6646638808E3A14E7B02FEDED3F06918C7B078B7911F0BE",
+          "bytes": 3884492
+        },
+        {
+          "path": "out/deps/w5/lib/BulletInverseDynamics.lib",
+          "sha256": "69C1E34C3359324A4D9AF0C6DA853CAE231A01B7649D0C2935B4122CE4EA84C3",
+          "bytes": 516856
+        },
+        {
+          "path": "out/deps/w5/lib/BulletSoftBody.lib",
+          "sha256": "229D2E25C8C692D634D6C6E51C542BADC5EA0060AE9A964491EB1B266E6B8E9D",
+          "bytes": 7141232
+        },
+        {
+          "path": "out/deps/w5/lib/LinearMath.lib",
+          "sha256": "37D1E4A112997B70EB766959790BE2D213D34108657735412E0A34B56A6DD6F7",
+          "bytes": 586946
+        }
+      ],
+      "dependsOn": []
+    },
+    "assimp": {
+      "kind": "archive",
+      "wave": "W6",
+      "upstream": "https://github.com/assimp/assimp",
+      "version": "5.2.3",
+      "archive": {
+        "url": "https://github.com/assimp/assimp/archive/refs/tags/v5.2.3.tar.gz",
+        "sha256": "b20fc41af171f6d8f1f45d4621f18e6934ab7264e71c37cd72fd9832509af2a8",
+        "bytes": 49606233
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "LICENSE",
+          "sha256": "147874443d242b4e2bae97036e26ec9d6b37f706174c1bd5ecfcc8c1294cef51",
+          "license": "BSD-3-Clause"
+        }
+      ],
+      "expectedExecutables": [
+        "assimp-5.2.3/BUILDBINARIES_EXAMPLE.bat",
+        "assimp-5.2.3/contrib/zlib/contrib/masmx64/bld_ml64.bat",
+        "assimp-5.2.3/contrib/zlib/contrib/masmx86/bld_ml32.bat",
+        "assimp-5.2.3/packaging/windows-mkzip/mkfinal.bat",
+        "assimp-5.2.3/packaging/windows-mkzip/mkrev.bat",
+        "assimp-5.2.3/scripts/android_crosscompile/make_android.bat",
+        "assimp-5.2.3/tools/make/build_env_win32.bat",
+        "assimp-5.2.3/tools/make/make_all_win32_x64.bat"
+      ],
+      "patches": [
+        {
+          "file": "patches/assimp/001-remove-release-zi.patch",
+          "sha256": "15e0f45bb168fa81ca23fa0ab7a61d825f3bf13d7c809881150327d21c548360",
+          "reason": "remove the /Zi assimp appends to CMAKE_CXX_FLAGS_RELEASE (root CMakeLists line 305): /Zi routes debug info into a compiler PDB whose GUID is regenerated on every run and embedded in each object, so the archive can never reproduce byte-for-byte; /Brepro does not cover PDB signatures (F-W2-65, DEC-076)"
+        }
+      ],
+      "buildProfile": {
+        "system": "cmake",
+        "flags": [
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DASSIMP_BUILD_TESTS=OFF",
+          "-DASSIMP_BUILD_ASSIMP_TOOLS=OFF",
+          "-DASSIMP_BUILD_SAMPLES=OFF",
+          "-DASSIMP_BUILD_ZLIB=ON",
+          "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded",
+          "-DCMAKE_POLICY_DEFAULT_CMP0091=NEW",
+          "-DASSIMP_WARNINGS_AS_ERRORS=OFF",
+          "-DUSE_STATIC_CRT=ON"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w6/lib/assimp-vc143-mt.lib",
+          "sha256": "58F6D9F65FF075A65521398AE6397C256F41A3DE64CF0BA70DE8BFA6D1EA797A",
+          "bytes": 208451930
+        }
+      ],
+      "dependsOn": []
+    },
+    "boost": {
+      "kind": "archive",
+      "wave": "W7",
+      "upstream": "https://www.boost.org/",
+      "version": "1.74.0",
+      "archive": {
+        "url": "https://archives.boost.io/release/1.74.0/source/boost_1_74_0.tar.gz",
+        "sha256": "afff36d392885120bcac079148c177d1f6f7730ec3d47233aa51b0afa4db94a5",
+        "bytes": 129348951
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "LICENSE_1_0.txt",
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "license": "BSL-1.0"
+        }
+      ],
+      "expectedExecutables": [
+        "boost_1_74_0/libs/mp11/tools/single-header.bat",
+        "boost_1_74_0/libs/beast/test/extern/zlib-1.2.11/contrib/masmx64/bld_ml64.bat",
+        "boost_1_74_0/libs/beast/test/extern/zlib-1.2.11/contrib/masmx86/bld_ml32.bat",
+        "boost_1_74_0/libs/filesystem/test/boost_test.bat",
+        "boost_1_74_0/libs/filesystem/doc/build_tutorial.bat",
+        "boost_1_74_0/libs/filesystem/doc/publish.bat",
+        "boost_1_74_0/libs/filesystem/tools/backup.bat",
+        "boost_1_74_0/libs/filesystem/tools/publish.bat",
+        "boost_1_74_0/libs/filesystem/example/test/setup.bat",
+        "boost_1_74_0/libs/filesystem/example/test/build.bat",
+        "boost_1_74_0/libs/python/doc/numpy/make.bat",
+        "boost_1_74_0/libs/program_options/ci/mingw.bat",
+        "boost_1_74_0/libs/geometry/doc/doxy/make_documentation.bat",
+        "boost_1_74_0/libs/circular_buffer/example/circular_buffer_examples.bat",
+        "boost_1_74_0/libs/endian/benchmark/test.bat",
+        "boost_1_74_0/libs/mpl/preprocessed/preprocess.cmd",
+        "boost_1_74_0/libs/hof/doc/make.bat",
+        "boost_1_74_0/libs/safe_numerics/doc/boostbook/makehtml.bat",
+        "boost_1_74_0/boost/pool/detail/pool_construct_simple.bat",
+        "boost_1_74_0/boost/pool/detail/pool_construct.bat",
+        "boost_1_74_0/tools/boost_install/test/iostreams/zlib-1.2.11/contrib/masmx64/bld_ml64.bat",
+        "boost_1_74_0/tools/boost_install/test/iostreams/zlib-1.2.11/contrib/masmx86/bld_ml32.bat",
+        "boost_1_74_0/tools/boostdep/examples/report.bat",
+        "boost_1_74_0/tools/build/src/engine/guess_toolset.bat",
+        "boost_1_74_0/tools/build/src/engine/config_toolset.bat",
+        "boost_1_74_0/tools/build/src/engine/build.bat",
+        "boost_1_74_0/tools/build/src/engine/vswhere_usability_wrapper.cmd",
+        "boost_1_74_0/tools/build/bootstrap.bat",
+        "boost_1_74_0/bootstrap.bat"
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "b2",
+        "flags": [
+          "address-model=64",
+          "variant=release",
+          "link=static",
+          "runtime-link=static",
+          "threading=multi",
+          "--with-filesystem",
+          "--with-system",
+          "--with-serialization",
+          "--with-regex",
+          "--with-iostreams",
+          "--with-date_time",
+          "--with-thread",
+          "--with-chrono"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w7/lib/libboost_filesystem-vc143-mt-s-x64-1_74.lib",
+          "sha256": "496A16407E91CAA3D8F8D3E2F27446AA8B9EEB0E2EB23A05CFC3D61DEAEFA81C",
+          "bytes": 937220
+        },
+        {
+          "path": "out/deps/w7/lib/libboost_system-vc143-mt-s-x64-1_74.lib",
+          "sha256": "DBCAC71DE036E348FE8E8D5A3F5A8DBC1127A848636A89FEFE8A1147B7BC9C03",
+          "bytes": 1138
+        },
+        {
+          "path": "out/deps/w7/lib/libboost_serialization-vc143-mt-s-x64-1_74.lib",
+          "sha256": "F2B9BDFEFB53040829443DDD15D94EEDA98ECB9252A10F006A0F786F4F169E95",
+          "bytes": 4929726
+        },
+        {
+          "path": "out/deps/w7/lib/libboost_regex-vc143-mt-s-x64-1_74.lib",
+          "sha256": "61FD306A42764FD9986E2980B72041525A38A2FB76B869DBE044091D012726B5",
+          "bytes": 6634066
+        },
+        {
+          "path": "out/deps/w7/lib/libboost_iostreams-vc143-mt-s-x64-1_74.lib",
+          "sha256": "2EEC216AA33FA2C5F23B1459AAE044ADE2450B462ADD7D9B236A5F0CAF4DE3DF",
+          "bytes": 410134
+        },
+        {
+          "path": "out/deps/w7/lib/libboost_date_time-vc143-mt-s-x64-1_74.lib",
+          "sha256": "4E16A483555ECAB83C4FFA251FDF9F64B75179CDD1477D1AF430FDF48C040C23",
+          "bytes": 1198
+        },
+        {
+          "path": "out/deps/w7/lib/libboost_thread-vc143-mt-s-x64-1_74.lib",
+          "sha256": "82C59BB74E38A2A42E3BC4191D8146946C0A90891889FBE351366912A750F226",
+          "bytes": 505470
+        },
+        {
+          "path": "out/deps/w7/lib/libboost_chrono-vc143-mt-s-x64-1_74.lib",
+          "sha256": "F25904BBFE0C7B54874AA60AEF80271900E562EC3C4F60E11AA12A0EB67ECD4D",
+          "bytes": 328730
+        }
+      ],
+      "dependsOn": []
+    },
+    "mono-msi": {
+      "kind": "binary",
+      "wave": "W8",
+      "upstream": "https://www.mono-project.com/",
+      "version": "6.8.0.105",
+      "archive": {
+        "url": "https://download.mono-project.com/archive/6.8.0/windows-installer/mono-6.8.0.105-x64-0.msi",
+        "sha256": "DCBE043636F44623E397E43C8A552789CC747959BFCFBC202556CB6F32B47F1C",
+        "bytes": 154562560
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "LICENSE",
+          "sha256": "923C7053AD0D430CD9B0B69A0CCF3ABB7170A1CE50ECBF01915B565A35823D10",
+          "license": "MIT with third-party exceptions (see LICENSE)"
+        }
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "msiexec-extract",
+        "flags": [
+          "/a",
+          "/qn",
+          "no-install"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w8/mono-2.0-sgen.dll",
+          "sha256": "5ACEEFCD33C29BD657EFB54308C9015954E5A210D1AFC185CB61E457B93BBD0E",
+          "bytes": 6275072
+        },
+        {
+          "path": "out/deps/w8/Mono/bin/mono.exe",
+          "sha256": "D6D3030074A0CE1C6BB3291A25F6F30D864EE5CF926EC9BC181C9F4C39E6938C",
+          "bytes": 159744
+        },
+        {
+          "path": "out/deps/w8/Mono/lib/mono/4.5/mcs.exe",
+          "sha256": "B00693AD16029E525214730273305ED03146BB014E50AE6A09831C47C863F6CF",
+          "bytes": 1821184
+        },
+        {
+          "path": "out/deps/w8/Mono/etc/mono/config",
+          "sha256": "955F9D6AB2EC6757B913DD33989905BB7A55863CE7A7152C78BAA790F2A964D9",
+          "bytes": 3129
+        }
+      ],
+      "dependsOn": [],
+      "sourceOffer": {
+        "url": "https://download.mono-project.com/sources/mono/mono-6.8.0.105.tar.xz",
+        "sha256": "578799C44C3C86A9EB5DAF6DEC6C60A24341940FD376371956D4A46CF8612178"
+      }
+    },
+    "falco-csharp-api": {
+      "kind": "in-tree",
+      "wave": "W8b",
+      "upstream": "project:API",
+      "version": "project-source",
+      "licenseFiles": [
+        {
+          "pathInSource": "LICENSE",
+          "sha256": "C71D239DF91726FC519C6EB72D318EC65820627232B2F796219E87DCF35D0AB4",
+          "license": "Apache-2.0"
+        }
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "msbuild",
+        "flags": [
+          "producer=mcs-from-W8",
+          "target=library",
+          "sdk=4.8"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w8b/FalcoEngine.dll",
+          "sha256": "51E3CE0D148BE4447AA0228B5CA9F4ABA5BA48B9129C7417D7FF2BD7FA9976E7",
+          "bytes": 122368
+        }
+      ],
+      "dependsOn": [
+        "mono-msi"
+      ]
+    },
+    "openal-soft": {
+      "kind": "archive",
+      "wave": "W9",
+      "upstream": "https://github.com/kcat/openal-soft",
+      "version": "1.25.2",
+      "archive": {
+        "url": "https://github.com/kcat/openal-soft/archive/refs/tags/1.25.2.tar.gz",
+        "sha256": "FB27E5839AA11F0E5B9D33756965291FAD5D6909AB928EA1F796F4A1A6877894",
+        "bytes": 1407972
+      },
+      "expectedExecutables": [
+        "openal-soft-1.25.2/logging/log.cmd"
+      ],
+      "licenseFiles": [
+        {
+          "pathInSource": "COPYING",
+          "sha256": "D808CE217E5B611854DA622B57EC29FE545584C48BC5352FAE72A4B6E5074A15",
+          "license": "LGPL-2.0-or-later"
+        }
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "cmake",
+        "flags": [
+          "-DLIBTYPE=SHARED",
+          "-DALSOFT_UTILS=OFF",
+          "-DALSOFT_EXAMPLES=OFF",
+          "-DALSOFT_TESTS=OFF",
+          "-DALSOFT_BACKEND_WASAPI=ON"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w9/bin/OpenAL32.dll",
+          "sha256": "EE9AA2436506865FBB8119B2BFC067AFBC4FA132CB2C6D0477182A81AA752541",
+          "bytes": 1757696
+        },
+        {
+          "path": "out/deps/w9/lib/OpenAL32.lib",
+          "sha256": "9B196E152C04F2C6BC9A0C22D47A67BE26C780D5A460D521C9D95D9E48677A74",
+          "bytes": 37562
+        }
+      ],
+      "dependsOn": []
+    },
+    "manifold": {
+      "kind": "archive",
+      "wave": "W10",
+      "upstream": "https://github.com/elalish/manifold",
+      "version": "3.4.1",
+      "archive": {
+        "url": "https://github.com/elalish/manifold/archive/refs/tags/v3.4.1.tar.gz",
+        "sha256": "48CB6F5022C19368B582CAF0F346C713740799BF1BC7339B2E9320D0C807053A",
+        "bytes": 30768040
+      },
+      "licenseFiles": [
+        {
+          "pathInSource": "LICENSE",
+          "sha256": "C71D239DF91726FC519C6EB72D318EC65820627232B2F796219E87DCF35D0AB4",
+          "license": "Apache-2.0"
+        }
+      ],
+      "patches": [],
+      "buildProfile": {
+        "system": "cmake",
+        "flags": [
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DMANIFOLD_PAR=OFF",
+          "-DMANIFOLD_TEST=OFF",
+          "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded"
+        ],
+        "inherit": "toolchain"
+      },
+      "outputs": [
+        {
+          "path": "out/deps/w10/lib/manifold.lib",
+          "sha256": "CCA9BF1ECF6473DF9C04CDE19411E286AA7BD9F31BB165E3D863D51763DC7993",
+          "bytes": 16509612
+        }
+      ],
+      "dependsOn": []
+    }
+  }
+}

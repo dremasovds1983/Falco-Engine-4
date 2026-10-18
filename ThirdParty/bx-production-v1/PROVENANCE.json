@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "componentId": "bx",
+  "version": "production-v1",
+  "commit": "5a2b876258ab5843d5e1dfde695b127baf9e354a",
+  "source": {
+    "url": "https://codeload.github.com/bkaradzic/bx/tar.gz/5a2b876258ab5843d5e1dfde695b127baf9e354a",
+    "sha256": "3F7E07B24429ACA9A262ED84489F461650DEBA93890F3FE4E9263D85E4A5E411",
+    "bytes": 1510054
+  },
+  "files": {
+    "extracted-notices/3rdparty/catch/catch_amalgamated.hpp.txt": {
+      "bytes": 535,
+      "sha256": "aa768c4998ad5d543e5d876c2fc8c1f02d953e73b8d68a657d0457694214a1d6",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/catch/catch_amalgamated.hpp",
+      "sourceSha256": "76881ba6e16e53c30daab1f93e0eb19600258a652fee597b723533fed113c86a",
+      "selection": {
+        "byteStart": 0,
+        "byteEnd": 535
+      }
+    },
+    "extracted-notices/3rdparty/ini/ini.h.txt": {
+      "bytes": 2696,
+      "sha256": "ac68fe43dd34cfa98c5ba0b414e03456198ba337393cdd4ef7cd5089f5a83d51",
+      "encoding": "utf-8-sig",
+      "sourcePath": "3rdparty/ini/ini.h",
+      "sourceSha256": "978d688a7c3aa87131292e8646f7b35284da593bd421ed25725141aebf2f8fb7",
+      "selection": {
+        "byteStart": 36595,
+        "byteEnd": 39291
+      }
+    },
+    "LICENSE": {
+      "bytes": 1299,
+      "sha256": "ac2e0d253b1584316a36a0fae1d4407fa3ebcb15f27021ab479b23d27f0c9c08",
+      "encoding": "utf-8-sig",
+      "sourcePath": "LICENSE",
+      "sourceSha256": "ac2e0d253b1584316a36a0fae1d4407fa3ebcb15f27021ab479b23d27f0c9c08",
+      "selection": "full"
+    }
+  },
+  "limitations": [
+    "Source notice superset, including optional tools/examples/platforms; not proof all code is linked.",
+    "Nested per-file attribution and final candidate coverage remain under review."
+  ]
+}

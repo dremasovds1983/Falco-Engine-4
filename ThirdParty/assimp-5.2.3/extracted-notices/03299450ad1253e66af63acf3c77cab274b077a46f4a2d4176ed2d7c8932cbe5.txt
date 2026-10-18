@@ -1,0 +1,36 @@
+// Copyright 2016 The Draco Authors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+// Utilities for converting unit vectors to octahedral coordinates and back.
+// For more details about octahedral coordinates, see for example Cigolle
+// et al.'14 “A Survey of Efficient Representations for Independent Unit
+// Vectors”.
+//
+// In short this is motivated by an octahedron inscribed into a sphere. The
+// direction of the normal vector can be defined by a point on the octahedron.
+// On the right hemisphere (x > 0) this point is projected onto the x = 0 plane,
+// that is, the right side of the octahedron forms a diamond like shape. The
+// left side of the octahedron is also projected onto the x = 0 plane, however,
+// in this case we flap the triangles of the diamond outward. Afterwards we
+// shift the resulting square such that all values are positive.
+//
+// Important values in this file:
+// * q: number of quantization bits
+// * max_quantized_value: the max value representable with q bits (odd)
+// * max_value: max value of the diamond = max_quantized_value - 1  (even)
+// * center_value: center of the diamond after shift
+//
+// Note that the parameter space is somewhat periodic, e.g. (0, 0) ==
+// (max_value, max_value), which is also why the diamond is one smaller than the
+// maximal representable value in order to have an odd range of values.

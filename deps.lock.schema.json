@@ -1,0 +1,361 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://falcoengine.local/schemas/deps.lock.schema.json",
+  "title": "FalcoEngine dependency lock",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "approvedBy",
+    "approvedAt",
+    "mode",
+    "toolchain",
+    "components"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schemaVersion": {
+      "const": 3
+    },
+    "approvedBy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approvedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "mode": {
+      "enum": [
+        "preparation",
+        "production"
+      ]
+    },
+    "toolchain": {
+      "$ref": "#/$defs/toolchain"
+    },
+    "components": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^[a-z0-9][a-z0-9._-]*$"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/component"
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^(?:[A-Fa-f0-9]{64}|TBD-on-approval|TBD-first-build)$"
+    },
+    "wave": {
+      "enum": [
+        "core",
+        "W0",
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W8b",
+        "W9",
+        "W10"
+      ]
+    },
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?![A-Za-z]:)(?![\\\\/])(?!.*(?:^|[\\\\/])\\.\\.(?:[\\\\/]|$)).+$"
+    },
+    "toolchain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vs",
+        "toolset",
+        "arch",
+        "crt",
+        "config"
+      ],
+      "properties": {
+        "vs": {
+          "type": "string",
+          "minLength": 1
+        },
+        "toolset": {
+          "const": "v143"
+        },
+        "arch": {
+          "const": "x64"
+        },
+        "crt": {
+          "const": "MT"
+        },
+        "config": {
+          "const": "Release"
+        }
+      }
+    },
+    "archive": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "sha256",
+        "bytes"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "licenseFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pathInSource",
+        "sha256",
+        "license"
+      ],
+      "properties": {
+        "pathInSource": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "license": {
+          "type": "string",
+          "minLength": 1
+        },
+        "optional": {
+          "type": "boolean"
+        }
+      }
+    },
+    "patch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "file",
+        "sha256",
+        "reason"
+      ],
+      "properties": {
+        "file": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "buildProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "system",
+        "flags",
+        "inherit"
+      ],
+      "properties": {
+        "system": {
+          "enum": [
+            "b2",
+            "cl",
+            "cmake",
+            "genie",
+            "in-tree",
+            "msbuild",
+            "msiexec-extract"
+          ]
+        },
+        "flags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inherit": {
+          "const": "toolchain"
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256",
+        "bytes"
+      ],
+      "properties": {
+        "path": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "sourceOffer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "sha256"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "wave",
+        "upstream",
+        "version",
+        "licenseFiles",
+        "patches",
+        "buildProfile",
+        "outputs",
+        "dependsOn"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "git",
+            "archive",
+            "binary",
+            "in-tree"
+          ]
+        },
+        "wave": {
+          "$ref": "#/$defs/wave"
+        },
+        "upstream": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{40}$"
+        },
+        "archive": {
+          "$ref": "#/$defs/archive"
+        },
+        "licenseFiles": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/licenseFile"
+          }
+        },
+        "patches": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/patch"
+          }
+        },
+        "buildProfile": {
+          "$ref": "#/$defs/buildProfile"
+        },
+        "outputs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/output"
+          }
+        },
+        "dependsOn": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._-]*$"
+          }
+        },
+        "sourceOffer": {
+          "$ref": "#/$defs/sourceOffer"
+        },
+        "expectedExecutables": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/relativePath"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "git"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "commit"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "archive",
+                  "binary"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "archive"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

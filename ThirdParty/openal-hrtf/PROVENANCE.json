@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "embedded-hrtf-notice",
+  "openalVersion": "1.25.2",
+  "dllSha256": "EE9AA2436506865FBB8119B2BFC067AFBC4FA132CB2C6D0477182A81AA752541",
+  "dataset": {
+    "pathInSource": "hrtf/Default HRTF.mhr",
+    "sha256": "0b2f09f4d9167dec4e977e7e1a8c78df17e87da06fb0871b9896fadaa473a440",
+    "bytes": 159841
+  },
+  "upstreamDocumentationSha256": "efca3106588a0d35d8aefc4650a98a6e6044cbe432d7c6c34c7e912ce85f0311",
+  "attributionSource": "https://sound.media.mit.edu/resources/KEMAR.html",
+  "files": {
+    "NOTICE.md": "b417119b4769bb5d4039978721226a4755a9c6ab6224eb288057ee7aaa53e31f"
+  },
+  "limitations": [],
+  "sourceArchive": {
+    "url": "https://github.com/kcat/openal-soft/archive/refs/tags/1.25.2.tar.gz",
+    "sha256": "fb27e5839aa11f0e5b9d33756965291fad5d6909ab928ea1f796f4a1a6877894",
+    "bytes": 1407972,
+    "members": {
+      "hrtf/Default HRTF.mhr": {
+        "member": "openal-soft-1.25.2/hrtf/Default HRTF.mhr",
+        "sha256": "0b2f09f4d9167dec4e977e7e1a8c78df17e87da06fb0871b9896fadaa473a440",
+        "bytes": 159841
+      },
+      "docs/hrtf.txt": {
+        "member": "openal-soft-1.25.2/docs/hrtf.txt",
+        "sha256": "efca3106588a0d35d8aefc4650a98a6e6044cbe432d7c6c34c7e912ce85f0311",
+        "bytes": 3746
+      }
+    }
+  }
+}

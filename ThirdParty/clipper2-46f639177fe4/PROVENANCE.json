@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "kind": "pinned-clipper2-source",
+  "commit": "46f639177fe418f9689e8ddb74f08a870c71f5b4",
+  "upstream": "https://github.com/AngusJohnson/Clipper2",
+  "version": "2.0.1",
+  "selection": "Library sources and CMake inputs only; examples, tests and utilities excluded. All included bytes are unmodified Git blobs.",
+  "files": {
+    "CPP/CMakeLists.txt": {
+      "bytes": 12832,
+      "sha256": "9838e05405efb2db0db11f20dea7c2d3fdfff211dd6be42e3c0e2611ae886348"
+    },
+    "CPP/Clipper2.pc.cmakein": {
+      "bytes": 382,
+      "sha256": "90ed5212fc01c5d3b25b16ce62498f4f29610d444aa5c1a2588aea18704da74f"
+    },
+    "CPP/Clipper2Config.cmake.in": {
+      "bytes": 156,
+      "sha256": "8aee0e82d16ff7cd05febd66b1fb1deba790e03c3205f0920ef96c478b1e95b4"
+    },
+    "CPP/Clipper2Lib/include/clipper2/clipper.core.h": {
+      "bytes": 35320,
+      "sha256": "b667c2fe968344252e2c32c0cffc09cf6520164e272fcf63bf46eccc707b138f"
+    },
+    "CPP/Clipper2Lib/include/clipper2/clipper.engine.h": {
+      "bytes": 18972,
+      "sha256": "e77185eb535cdae22feb85a045b6b90365f0cfd841bd7fb01714fc03a026fa09"
+    },
+    "CPP/Clipper2Lib/include/clipper2/clipper.export.h": {
+      "bytes": 27954,
+      "sha256": "035e4257f1f127d6a17833331922f2b1b615371b64bb4cd625842102517793b0"
+    },
+    "CPP/Clipper2Lib/include/clipper2/clipper.h": {
+      "bytes": 25617,
+      "sha256": "145efd001ef2f45ac5655a18e19d8a122efdf665c38d306a1fe91ce9e0d18450"
+    },
+    "CPP/Clipper2Lib/include/clipper2/clipper.minkowski.h": {
+      "bytes": 4128,
+      "sha256": "6ea4f08d3e2561bdd4d95a548e1b5d7983100e317ed805616b8d602f03d3dbe3"
+    },
+    "CPP/Clipper2Lib/include/clipper2/clipper.offset.h": {
+      "bytes": 4731,
+      "sha256": "147e5f4694327d62cec31fec55b69537f178e808a715a533bb42c01a85cc435a"
+    },
+    "CPP/Clipper2Lib/include/clipper2/clipper.rectclip.h": {
+      "bytes": 2801,
+      "sha256": "2970dbe3f91d32e96abc3117240694fc09f354060ff84e4a95014ec510f4d8dd"
+    },
+    "CPP/Clipper2Lib/include/clipper2/clipper.triangulation.h": {
+      "bytes": 1289,
+      "sha256": "a82d32e65583cce5a6d704796c54de3ddd2963d219057263a0f87f8d14a07d6c"
+    },
+    "CPP/Clipper2Lib/include/clipper2/clipper.version.h": {
+      "bytes": 126,
+      "sha256": "0d636f1599b09743496d5c15c7dcb5bc3101bd423d6745bf17e480edbffccdac"
+    },
+    "CPP/Clipper2Lib/src/clipper.engine.cpp": {
+      "bytes": 87899,
+      "sha256": "7b2cc17d4debd3b5ee6bd2c592ecda5082253324c7dd514b5593ae1b2c7812b2"
+    },
+    "CPP/Clipper2Lib/src/clipper.offset.cpp": {
+      "bytes": 20974,
+      "sha256": "ebc01258953212d20fed090a4a740f94926c3c6706a092fec4c5e9cb5292305a"
+    },
+    "CPP/Clipper2Lib/src/clipper.rectclip.cpp": {
+      "bytes": 28076,
+      "sha256": "79c7d8d90dd3b577db77a152c4739f6f49bfda8727528291250d3d8e8d79e18c"
+    },
+    "CPP/Clipper2Lib/src/clipper.triangulation.cpp": {
+      "bytes": 38243,
+      "sha256": "94e7449b9f278b71d86c3d493d40652bbfa1eae539c1c5b926b66977d82274bb"
+    },
+    "CPP/clipper.version.in": {
+      "bytes": 138,
+      "sha256": "0fa7b02aae2751806611a1d8636df89f162608c1af2a9e6b9b5876876a99c544"
+    },
+    "LICENSE": {
+      "bytes": 1338,
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    "README.md": {
+      "bytes": 5933,
+      "sha256": "232437d0b8343f875c367e642b96dd4ab30d5b473cc91f659a50caec018af52a"
+    }
+  }
+}

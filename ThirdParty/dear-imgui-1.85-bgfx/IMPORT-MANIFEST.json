@@ -1,0 +1,152 @@
+[
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\imconfig.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\imconfig.h",
+    "sha256": "b7b0532a3da507227de44a5af7981825f4faca2f5fc95afeefa95da88aa0f5f5"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\imgui.cpp",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\imgui.cpp",
+    "sha256": "0be09f64ee279cdbb196d369e3c8ab230ea5f3112bc09dee849c247fc66344ce"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\imgui.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\imgui.h",
+    "sha256": "772e9eb1a8e91051a0f00602592eedcb7ba44f47ede1fb0aedeb68a0dfe42e2a"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\imgui_demo.cpp",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\imgui_demo.cpp",
+    "sha256": "5fedf3ce2b31876d4abbd78d298bd7206a2b0a2fa8a644bcc66e3db0f9a40e5c"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\imgui_draw.cpp",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\imgui_draw.cpp",
+    "sha256": "cebcdbcf293eb4cf600e03944218c2fb277d6c6fd2ff5c3f7ccaeef196927b60"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\imgui_internal.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\imgui_internal.h",
+    "sha256": "b9f4142e6ba480464856dc1a4fcd139470d99e1f335ca24980469ad3d85d65c3"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\imgui_tables.cpp",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\imgui_tables.cpp",
+    "sha256": "b542303284d1869c56c2135570c284e70d126a3e679656a0897cd83b6077255f"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\imgui_user.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\imgui_user.h",
+    "sha256": "c5cc93643abee610f5283deb848a5aa0ea43668073dc44f41f4d8005e307b5a7"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\imgui_user.inl",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\imgui_user.inl",
+    "sha256": "49afa73d0fe6be06bb42fc7c68001dcea0a35d40ae595611873d98619e8521ad"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\imgui_widgets.cpp",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\imgui_widgets.cpp",
+    "sha256": "4b05f05c27a9b54f06ca4171a7c5baf2c67589777a9cfc0456cd71f3f8fff353"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\imstb_rectpack.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\imstb_rectpack.h",
+    "sha256": "a53bcd85861ff53ca1526407db1f6fd2ad619636327dcf1e6318f33e545068dd"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\imstb_textedit.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\imstb_textedit.h",
+    "sha256": "686a603897d8ff024fd7dbc4bfe582ebb66b4581b89b084d69f899a9076847d2"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\imstb_truetype.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\imstb_truetype.h",
+    "sha256": "87345e551d9f0060f7551c804fe7ed02e57580c0a22f979442660e2781a973b4"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\misc\\cpp\\imgui_stdlib.cpp",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\misc\\cpp\\imgui_stdlib.cpp",
+    "sha256": "37e1c769c43cc5a3ce6e39c04ca55be6a22b6beaf00b8541c0410391d0549cbb"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\misc\\cpp\\imgui_stdlib.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\misc\\cpp\\imgui_stdlib.h",
+    "sha256": "92795da035e7f8c6ac9dd96f37c2f34172904837574aa642c8a297d997486d2a"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\stb_rect_pack.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\stb_rect_pack.h",
+    "sha256": "fbfe6a057591947c7f89b0b27d25af5dfb45981d5b1b2aa34126bac71631e76e"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\stb_textedit.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\stb_textedit.h",
+    "sha256": "68a648c6473822da86c7363a19c51e2499841e2c573b483c8c7faccb42a56ffb"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\stb_truetype.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\stb_truetype.h",
+    "sha256": "3c0576eb5d94769c68f9aafc24be3c090cad99d0ac7862c49b84e3f16eecaecc"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\widgets\\color_picker.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\widgets\\color_picker.h",
+    "sha256": "fd7824e5b0f0bae2adb39cc9cd6b03306101fd88a418a5efaa7cf949f009e151"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\widgets\\color_picker.inl",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\widgets\\color_picker.inl",
+    "sha256": "35c75e1bef3aa7c04fc431b7ce9fecf5b969fa3a81947f8d7a7941b4b569a9f7"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\widgets\\color_wheel.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\widgets\\color_wheel.h",
+    "sha256": "90295ec4a507f3999d9dabf48dbc0a03f8aaee91e07fec4be7c2dc5cac08ecb4"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\widgets\\color_wheel.inl",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\widgets\\color_wheel.inl",
+    "sha256": "f9652c86fe44e03ca016026017ca5569ac43d2ffd62321869dddf81331bf6ba7"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\widgets\\file_list.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\widgets\\file_list.h",
+    "sha256": "22772fddb48811cf1f6330e97a9a1f7a1e302a1a3c5355dd1b1b1c4090861820"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\widgets\\file_list.inl",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\widgets\\file_list.inl",
+    "sha256": "175269e3fac2f01633fcef855be9c261cfb30b52a46f4cf28b52cab923be098d"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\widgets\\markdown.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\widgets\\markdown.h",
+    "sha256": "5e825fb9a62b567433190b8e1d794b000ce72b0c2154a632b816c7bca2354df9"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\widgets\\markdown.inl",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\widgets\\markdown.inl",
+    "sha256": "d52e24885fb48e24ce043163b1a6c4ec10a3651f26a8af92c49e326f55cb4788"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\widgets\\memory_editor.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\widgets\\memory_editor.h",
+    "sha256": "31b96ec7496f38f0a610086a9b01f7965355f3dc4512e45b95bd577ccc002ae3"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\widgets\\memory_editor.inl",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\widgets\\memory_editor.inl",
+    "sha256": "ca1a4c2fd469077fe5001c137164f9d6afdebcec29c30497d5c4a49d4e6c5d68"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\widgets\\range_slider.h",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\widgets\\range_slider.h",
+    "sha256": "4575d55326639a5d1c09ff7185bb355cf9197c56aa9ea36e48551456ec74f78e"
+  },
+  {
+    "source": "Bgfx\\bgfx\\3rdparty\\dear-imgui\\widgets\\range_slider.inl",
+    "target": "ThirdParty\\dear-imgui-1.85-bgfx\\widgets\\range_slider.inl",
+    "sha256": "2db5317455a94164096fcad7c528879ddfc2d1063d7242ff56a5643ceca19d6d"
+  }
+]

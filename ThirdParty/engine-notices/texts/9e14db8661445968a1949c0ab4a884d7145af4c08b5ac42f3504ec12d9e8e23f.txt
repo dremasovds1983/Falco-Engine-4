@@ -1,0 +1,5 @@
+// Developed by Omar Cornut and every direct or indirect contributors to the GitHub.
+// See LICENSE.txt for copyright and licensing details (standard MIT License).
+// This library is free but needs your support to sustain development and maintenance.
+// Businesses: you can support continued development via invoiced technical support, maintenance and sponsoring contracts. Please reach out to "contact AT dearimgui.com".
+// Individuals: you can support continued development via donations. See docs/README or web page.
